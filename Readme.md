@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Мария Свиридкина](https://up.htmlacademy.ru/adaptive/23/user/1814839).
-* Наставник: `Неизвестно`.
+* Наставник: [Алексей Хабиров](https://htmlacademy.ru/profile/alex_khab).
 
 ---
 
