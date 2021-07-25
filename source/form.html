@@ -33,7 +33,6 @@
           <a href="form.html" class="menu__link">Подбор программы</a>
         </li>
       </ul>
-
     </nav>
   </header>
 
@@ -74,19 +73,80 @@
 
         <li class="options__item">
           <label class="options__label">
-            <input class="options__input" type="radio" name="gain" value="weight gain" checked>
+            <input class="options__input" type="radio" name="gain" value="weight gain">
             <span>Набор массы</span>
           </label>
         </li>
 
         <li class="options__item">
           <label class="options__label">
-            <input class="options__input" type="radio" name="dont-know" value="dont know" checked>
+            <input class="options__input" type="radio" name="dont-know" value="dont know">
             <span>Не знаю (нужен ваш совет)</span>
           </label>
         </li>
       </ul>
     </fieldset>
+
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+      <legend class="form__legend legend">Контактные данные (владельца кота)</legend>
+
+      <p class="form__field">
+        <label for="e-mail">E-mail:
+          <sup>*</sup>
+        </label>
+        <input id="e-mail" type="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" />
+      </p>
+
+      <p class="form__field">
+        <label for="tel">Телефон:
+          <sup>*</sup>
+        </label>
+        <input id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+      </p>
+    </form>
+
+    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
+      <legend class="form__legend legend">Комментарий</legend>
+      <p class="form__comment">
+        <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
+      </p>
+    </form>
+
+    <fieldset class="page-main__add-options add-options">
+      <legend class="add-options__legend legend">Дополнительно</legend>
+      <ul class="add-options__list list-style-none">
+
+        <li class="add-options__item">
+          <label class="add-options__label">
+            <input class="add-options__input" type="checkbox" name="sweetener" checked>
+            <span>Сахарозаменитель</span>
+          </label>
+        </li>
+
+        <li class="add-options__item">
+          <label class="add-options__label">
+            <input class="add-options__input" type="checkbox" name="water">
+            <span>Питьевая вода</span>
+          </label>
+        </li>
+
+        <li class="add-options__item">
+          <label class="add-options__label">
+            <input class="add-options__input" type="checkbox" name="milk">
+            <span>Молоко</span>
+          </label>
+        </li>
+
+        <li class="add-options__item">
+          <label class="add-options__label">
+            <input class="add-options__input" type="checkbox" name="vitamins">
+            <span>Витамины</span>
+          </label>
+        </li>
+      </ul>
+    </fieldset>
+    <button class="filter-button button" type="submit">Показать</button>
+    </div>
 
   </main>
 
