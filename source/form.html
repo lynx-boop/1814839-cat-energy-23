@@ -41,117 +41,127 @@
     <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <p class="form__field">
-        <label for="name">Имя:
-          <sup>*</sup>
-        </label>
-        <input id="name" type="text" name="name" placeholder="БАРСИК" />
-      </p>
 
-      <p class="form__field">
-        <label for="age">Вес (кг):
-          <sup>*</sup>
-        </label>
-        <input id="weight" type="text" name="weight" placeholder="7" />
-      </p>
+      <fieldset class="form__group">
+        <legend class="form__title visually-hidden">Контактные данные</legend>
+        <p class="form__field text-field">
+          <label class="text-field__label" for="name">
+            Имя:
+            <sup>*</sup>
+          </label>
+          <input class="text-field__input" id="name" type="text" name="name" placeholder="Барсик" />
+        </p>
 
-      <p class="form__field">
-        <label for="weight">Возраст (лет):</label>
-        <input id="age" type="text" name="age" placeholder="7" />
-      </p>
+        <p class="form__field text-field">
+          <label class="text-field__label" for="age">
+            Вес (кг):
+            <sup>*</sup>
+          </label>
+          <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
+        </p>
+
+        <p class="form__field text-field">
+          <label class="text-field__label" for="weight">Возраст (лет):</label>
+          <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
+        </p>
+      </fieldset>
+
+      <fieldset class="form__group form__group--options">
+        <legend class="form__title visually-hidden">Выбор опции</legend>
+        <ul class="form__list list-style-none">
+
+          <li class="form__item radio-input">
+            <label class="radio-input__label">
+              <input class="radio-input__input" type="radio" name="option" value="slimming" checked>
+              <span>Похудение</span>
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label radio-input">
+              <input class="form__input" type="radio" name="option" value="weight gain">
+              <span>Набор массы</span>
+            </label>
+          </li>
+
+          <li class="form__item">
+            <label class="form__label radio-input">
+              <input class="form__input" type="radio" name="option" value="dont know">
+              <span>Не знаю (нужен ваш совет)</span>
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+
+      <fieldset class="form__group form__group--contacts">
+        <legend class="form__title">Контактные данные (владельца кота)</legend>
+
+        <p class="form__field">
+          <label class="form__label" for="e-mail">
+            E-mail:
+            <sup>*</sup>
+          </label>
+          <input class="form__input" id="e-mail" type="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" />
+        </p>
+
+        <p class="form__field">
+          <label class="form__label" for="tel">
+            Телефон:
+            <sup>*</sup>
+          </label>
+          <input class="form__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+        </p>
+      </fieldset>
+
+      <fildset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
+        <legend class="form__title">Комментарий</legend>
+        <label class="form__label">
+          <textarea class="form__textarea" name="comment" id="comment"
+            placeholder="Расскажите обо всех повадках кота"></textarea>
+        </label>
+      </fildset>
+
+      <fieldset class="form__group form__group--add-options">
+        <legend class="form__title">Дополнительно</legend>
+        <ul class="form__list list-style-none">
+
+          <li class="form__item checkbox">
+            <label class="form__label">
+              <input class="form__input" type="checkbox" name="sweetener" checked>
+              <span>Сахарозаменитель</span>
+            </label>
+          </li>
+
+          <li class="form__item checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="water">
+              <span>Питьевая вода</span>
+            </label>
+          </li>
+
+          <li class="form__item checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="milk">
+              <span>Молоко</span>
+            </label>
+          </li>
+
+          <li class="form__item checkbox">
+            <label class="checkbox__label">
+              <input class="checkbox__input" type="checkbox" name="vitamins">
+              <span>Витамины</span>
+            </label>
+          </li>
+        </ul>
+
+        <p class="form__note">
+          <sup>*</sup>
+          — Обязательные поля
+        </p>
+      </fieldset>
+      <button class="form__button button" type="submit">Отправить заявку</button>
+
     </form>
-
-    <fieldset class="page-main__options options">
-      <ul class="options__list list-style-none">
-
-        <li class="options__item">
-          <label class="options__label">
-            <input class="options__input" type="radio" name="slimming" value="slimming" checked>
-            <span>Похудение</span>
-          </label>
-        </li>
-
-        <li class="options__item">
-          <label class="options__label">
-            <input class="options__input" type="radio" name="gain" value="weight gain">
-            <span>Набор массы</span>
-          </label>
-        </li>
-
-        <li class="options__item">
-          <label class="options__label">
-            <input class="options__input" type="radio" name="dont-know" value="dont know">
-            <span>Не знаю (нужен ваш совет)</span>
-          </label>
-        </li>
-      </ul>
-    </fieldset>
-
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <legend class="form__legend legend">Контактные данные (владельца кота)</legend>
-
-      <p class="form__field">
-        <label for="e-mail">E-mail:
-          <sup>*</sup>
-        </label>
-        <input id="e-mail" type="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" />
-      </p>
-
-      <p class="form__field">
-        <label for="tel">Телефон:
-          <sup>*</sup>
-        </label>
-        <input id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
-      </p>
-    </form>
-
-    <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
-      <legend class="form__legend legend">Комментарий</legend>
-      <p class="form__comment">
-        <textarea name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
-      </p>
-    </form>
-
-
-    <fieldset class="page-main__add-options add-options">
-      <legend class="add-options__legend legend">Дополнительно</legend>
-      <ul class="add-options__list list-style-none">
-
-        <li class="add-options__item">
-          <label class="add-options__label">
-            <input class="add-options__input" type="checkbox" name="sweetener" checked>
-            <span>Сахарозаменитель</span>
-          </label>
-        </li>
-
-        <li class="add-options__item">
-          <label class="add-options__label">
-            <input class="add-options__input" type="checkbox" name="water">
-            <span>Питьевая вода</span>
-          </label>
-        </li>
-
-        <li class="add-options__item">
-          <label class="add-options__label">
-            <input class="add-options__input" type="checkbox" name="milk">
-            <span>Молоко</span>
-          </label>
-        </li>
-
-        <li class="add-options__item">
-          <label class="add-options__label">
-            <input class="add-options__input" type="checkbox" name="vitamins">
-            <span>Витамины</span>
-          </label>
-        </li>
-      </ul>
-      <button class="filter-button button" type="submit">Отправить заявку</button>
-      <p>
-        <sup>*</sup>
-        — Обязательные поля
-      </p>
-    </fieldset>
-
   </main>
 
   <footer class="main-footer">
