@@ -24,45 +24,46 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list menu">
+      <ul class="main-nav__list menu list-style-none">
         <li class="menu__item">
-          <a href="index.html" class="menu__link">Главная</a>
+          <a href="index.html" class="menu__link link uppercase">Главная</a>
         </li>
         <li class="menu__item">
-          <a href="catalog.html" class="menu__link">Каталог продукции</a>
+          <a href="catalog.html" class="menu__link link  uppercase">Каталог продукции</a>
         </li>
         <li class="menu__item">
-          <a href="form.html" class="menu__link">Подбор программы</a>
+          <a href="form.html" class="menu__link link uppercase">Подбор программы</a>
         </li>
       </ul>
+
     </nav>
   </header>
 
   <main class="page-main">
     <h1 class="page-main__main-title">Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    <p class="uppercase">Заполните анкету, и мы подберем программу питания для вашего кота</p>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
 
       <fieldset class="form__group">
         <legend class="form__title visually-hidden">Контактные данные</legend>
         <p class="form__field text-field">
-          <label class="text-field__label" for="name">
+          <label class="text-field__label uppercase" for="name">
             Имя:
             <sup>*</sup>
           </label>
-          <input class="text-field__input" id="name" type="text" name="name" placeholder="Барсик" />
+          <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
         </p>
 
         <p class="form__field text-field">
-          <label class="text-field__label" for="age">
+          <label class="text-field__label uppercase" for="age">
             Вес (кг):
             <sup>*</sup>
           </label>
           <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
         </p>
 
-        <p class="form__field text-field">
+        <p class="form__field text-field uppercase">
           <label class="text-field__label" for="weight">Возраст (лет):</label>
           <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
         </p>
@@ -75,21 +76,21 @@
           <li class="form__item radio-input">
             <label class="radio-input__label">
               <input class="radio-input__input" type="radio" name="option" value="slimming" checked>
-              <span>Похудение</span>
+              <span class="uppercase">Похудение</span>
             </label>
           </li>
 
           <li class="form__item">
             <label class="form__label radio-input">
               <input class="form__input" type="radio" name="option" value="weight gain">
-              <span>Набор массы</span>
+              <span class="uppercase">Набор массы</span>
             </label>
           </li>
 
           <li class="form__item">
             <label class="form__label radio-input">
               <input class="form__input" type="radio" name="option" value="dont know">
-              <span>Не знаю (нужен ваш совет)</span>
+              <span class="uppercase">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -99,26 +100,27 @@
         <legend class="form__title">Контактные данные (владельца кота)</legend>
 
         <p class="form__field">
-          <label class="form__label" for="e-mail">
+          <label class="form__label uppercase" for="e-mail">
             E-mail:
             <sup>*</sup>
           </label>
-          <input class="form__input" id="e-mail" type="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" />
+          <input class="form__input uppercase" id="e-mail" type="e-mail" name="e-mail"
+            placeholder="kuklachev@gmail.com" />
         </p>
 
         <p class="form__field">
-          <label class="form__label" for="tel">
+          <label class="form__label uppercase" for="tel">
             Телефон:
             <sup>*</sup>
           </label>
-          <input class="form__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+          <input class="form__input uppercase" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
         </p>
       </fieldset>
 
       <fildset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
         <legend class="form__title">Комментарий</legend>
         <label class="form__label">
-          <textarea class="form__textarea" name="comment" id="comment"
+          <textarea class="form__textarea uppercase" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fildset>
@@ -130,28 +132,28 @@
           <li class="form__item checkbox">
             <label class="form__label">
               <input class="form__input" type="checkbox" name="sweetener" checked>
-              <span>Сахарозаменитель</span>
+              <span class="uppercase">Сахарозаменитель</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="water">
-              <span>Питьевая вода</span>
+              <span class="uppercase">Питьевая вода</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="milk">
-              <span>Молоко</span>
+              <span class="uppercase">Молоко</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
               <input class="checkbox__input" type="checkbox" name="vitamins">
-              <span>Витамины</span>
+              <span class="uppercase">Витамины</span>
             </label>
           </li>
         </ul>
@@ -161,7 +163,7 @@
           — Обязательные поля
         </p>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <button class="form__button button uppercase" type="submit">Отправить заявку</button>
 
     </form>
   </main>
@@ -171,7 +173,7 @@
 
     <div class="wrapper">
       <div class="main-footer__location location">
-        <h2 class="location__cooperation">Приглашаем к сотрудничеству дилеров!</h2>
+        <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
         <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         <div class="location__map">
           <iframe class="location__google-map"
@@ -186,17 +188,17 @@
 
       <ul class="main-footer__social-list social-list list-style-none">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link link">
             <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link link">
             <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link link">
             <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
           </a>
         </li>

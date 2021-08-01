@@ -1,0 +1,51 @@
+//promo
+.promo__main-title {
+  font-size: 36px;
+  line-height: 36px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+.promo__text {
+  font-size: 14px;
+  line-height: 14px;
+  color: var(--white);
+  background-color: var(--black);
+}
+
+//programs
+.programs__title {
+  font-size: 24px;
+  line-height: 37px;
+}
+
+.programs__catalog {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.programs__text {
+  font-family: "Arial", sans-serif;
+}
+
+//how-it-works
+.how-it-works__list {
+  font-family: "Arial", sans-serif;
+}
+
+//example
+.example__text--min {
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
+}
+
+.example__text--extra {
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+}
