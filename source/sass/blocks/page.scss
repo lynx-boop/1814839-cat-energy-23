@@ -1,9 +1,11 @@
 .page {
+  margin: 0;
   height: 100%;
 }
 
 .page__body {
   display: grid;
+  grid-template-rows: auto 1fr auto;
   font-family: $custom-font;
   font-size: 14px;
   line-height: 18px;
@@ -12,4 +14,4 @@
   min-height: 100%;
 }
 
- // липкий футер
+// липкий футер
