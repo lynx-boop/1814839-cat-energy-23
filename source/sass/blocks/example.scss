@@ -1,12 +1,14 @@
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+}
 
-//how-it-works
-.how-it-works__list {
+.example__text {
   font-family: "Arial", sans-serif;
 }
 
-//example
 .example__text--min {
-  font-family: "Arial", sans-serif;
   font-size: 12px;
   line-height: 12px;
 }
@@ -14,6 +16,7 @@
 .example__text--extra {
   font-size: 24px;
   line-height: 24px;
+  font-family: "Oswald", sans-serif;
 }
 
 .example__cost {
