@@ -4,9 +4,19 @@
   font-weight: 400;
 }
 
-.card__desc {
+.card__desc,
+.card__text {
   font-family: $default-font;
   font-size: 12px;
   line-height: 16px;
   font-weight: 400;
+}
+
+.card__title {
+  font-weight: 400;
+}
+
+.card__button--show {
+  background-color: $grey-100;
+  color: $grey-900;
 }
