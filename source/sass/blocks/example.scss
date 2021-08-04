@@ -1,4 +1,5 @@
 .example {
+  display: grid;
   background-color: $grey-200;
   padding: 27px 20px 25px 20px;
 }
@@ -26,7 +27,11 @@
 .example__text--min {
   font-size: 12px;
   line-height: 12px;
+  justify-self: center;
 }
+
+// FIXME Если задаю ширину - перестают центроваться. Если добавляю <br> - перестают центроваться. Центруются только в таком
+// положении. Почему???
 
 .example__text--extra {
   justify-self: center;
@@ -34,16 +39,20 @@
   line-height: 24px;
   font-family: "Oswald", sans-serif;
   margin-bottom: 16px;
+  background-image: url("img/index/weight-border.svg");
 }
+
+// FIXME не отображается фоновое изображение, почему?
 
 .example__cost {
   font-size: 14px;
   line-height: 20px;
+  justify-self: center;
 }
 
 .example__button {
   font-size: 16px;
   line-height: 20px;
   border: none;
-  background-color: $white;
+  background-color: transparent;
 }
