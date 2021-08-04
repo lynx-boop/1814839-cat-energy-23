@@ -1,14 +1,54 @@
+.programs__item {
+  display: grid;
+  background-color: $grey-100;
+  margin-top: 20px;
+  padding: 20px;
+  padding-top: 30px;
+}
+
 .programs__title {
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin-bottom: 30px;
+  justify-self: left;
+  padding-left: 70px;
 }
+
+.programs__item--slim .programs__title::before {
+  content: "";
+  background-image: url("img/index/cat-slim.svg");
+  width: 50px;
+  height: 53px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// FIXME почему-то не повляется псевдоэлемент, в чем может быть причина?
 
 .programs__text {
   font-family: "Arial", sans-serif;
+  font-size: 14px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid $grey-300;
+  margin: 0;
 }
 
 .programs__catalog {
   font-size: 16px;
   line-height: 16px;
+  margin-top: 19px;
 }
+
+.programs__catalog::after {
+  content: "";
+  background-image: url("img/index/arrow.svg");
+  width: 20px;
+  height: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+// FIXME почему-то не повляется псевдоэлемент, в чем может быть причина?
