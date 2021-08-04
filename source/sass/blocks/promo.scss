@@ -1,7 +1,9 @@
 .promo {
-  background-image: url(../img/index/background-cat-index.jpg);
+  display: grid;
+  background-image: url("../img/index/background-cat-index.jpg");
   background-repeat: no-repeat;
-  position: absolute;
+  background-origin: content-box;
+  background-position: 50% 0%;
 }
 
 .promo__main-title {
@@ -17,5 +19,5 @@
   line-height: 14px;
   font-weight: 400;
   color: $white;
-  background-color: $black;
+  // background-color: $black;
 }
