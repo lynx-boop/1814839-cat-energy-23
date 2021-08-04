@@ -7,3 +7,49 @@
 .how-it-works__list {
   font-family: "Arial", sans-serif;
 }
+
+.how-it-works__item {
+  margin: 0;
+  margin-bottom: 24px;
+  padding-left: 80px;
+}
+
+.how-it-works__item--leaf::before {
+  content: "";
+  background-image: url("img/index/icon-leaf.svg");
+  width: 26px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.how-it-works__item--boil::before {
+  content: "";
+  background-image: url("img/index/icon-boil.svg");
+  width: 26px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.how-it-works__item--cutlery::before {
+  content: "";
+  background-image: url("img/index/icon-cutlery.svg");
+  width: 26px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.how-it-works__item--scales::before {
+  content: "";
+  background-image: url("img/index/icon-scales.svg");
+  width: 26px;
+  height: 60px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
