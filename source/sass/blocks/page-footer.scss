@@ -1,3 +1,26 @@
 .page-footer {
   font-family: "Arial", sans-serif;
 }
+
+.page-footer__text-logo,
+.page-footer__social-list,
+.page-footer__partner {
+  justify-self: center;
+  align-self: center;
+}
+
+.page-footer__text-logo {
+margin-top: 39px;
+margin-bottom: 32px;
+}
+
+.page-footer__social-list,
+.page-footer__partner {
+  display: flex;
+}
+
+.page-footer__social-list {
+  width: 100%;
+  border-top: 1px solid $grey-300;
+  border-bottom: 1px solid $grey-300;
+}
