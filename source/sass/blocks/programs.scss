@@ -1,4 +1,6 @@
 .programs__item {
+  position: static;
+  // нужно для того, чтобы псевдоэлементы позиционировались относительно этого блока, но я не уверена, что это правильно
   display: grid;
   background-color: $grey-100;
   margin-top: 20px;
@@ -17,10 +19,20 @@
 
 .programs__item--slim .programs__title::before {
   content: "";
-  background-image: url("img/index/cat-slim.svg");
+  background-image: url("../img/index/cat-slim.svg");
   width: 50px;
   height: 53px;
-  position: absolute;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.programs__item--pro .programs__title::before {
+  content: "";
+  background-image: url("../img/index/cat-pro.svg");
+  width: 50px;
+  height: 53px;
+  position: relative;
   top: 0;
   left: 0;
 }
@@ -42,12 +54,12 @@
 
 .programs__catalog::after {
   content: "";
-  background-image: url("img/index/arrow.svg");
+  background-image: url("../img/index/arrow.svg");
   width: 20px;
   height: 10px;
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
 }
 
-// FIXME почему-то не повляется псевдоэлемент, в чем может быть причина?
+// FIXME как рпсположить элемент относительно эго контйнера, а не всей страницы? relativeз заставляет его пропадать совсем

@@ -11,6 +11,11 @@
 // FIXME почему вся вторая строка грида получила такой размер? Отступ до футера коллосальный, почему?
 
 .page-main__main-title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  border-top: 1px solid $grey-300;
+  align-self: center;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;

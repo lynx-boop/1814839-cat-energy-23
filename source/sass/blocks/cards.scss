@@ -1,0 +1,50 @@
+
+
+.cards__list {
+  display: grid;
+}
+
+.cards__item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-top: 1px solid $grey-300;
+  padding: 19px 0 25px 0;
+}
+
+.card__link {
+  justify-self: center;
+  align-self: center;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+}
+
+.card__desc,
+.card__text {
+  font-family: $default-font;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.card__text {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 14px;
+  font-family: $custom-font;
+  font-weight: 400;
+}
+
+.card__button {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
+
+.card__button--show {
+  background-color: $grey-100;
+  color: $grey-900;
+}
