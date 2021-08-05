@@ -4,23 +4,40 @@
 
 .page-footer__text-logo,
 .page-footer__social-list,
-.page-footer__partner {
+.page-footer__partner,
+.partner__link {
   justify-self: center;
   align-self: center;
 }
 
 .page-footer__text-logo {
-margin-top: 39px;
-margin-bottom: 32px;
-}
-
-.page-footer__social-list,
-.page-footer__partner {
-  display: flex;
+  width: 100%;
+  margin-top: 39px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid $grey-300;
 }
 
 .page-footer__social-list {
+  width: max-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-list__item {
+  justify-self: center;
+  align-self: center;
+}
+
+.page-footer__partner {
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   border-top: 1px solid $grey-300;
-  border-bottom: 1px solid $grey-300;
+  padding-top: 22px;
+  padding-bottom: 22px;
 }
