@@ -1,3 +1,12 @@
+.form {
+  display: grid;
+}
+
+.form__group {
+  display: grid;
+  border: none;
+}
+
 .form__title {
   font-size: 24px;
   line-height: 26px;
@@ -10,3 +19,24 @@
   line-height: 16px;
   font-weight: 400;
 }
+
+.form__input,
+.form__textarea {
+  min-height: 46px;
+  border: 1px solid $grey-210;
+}
+
+.form__textarea {
+  width: 100%;
+  min-height: 150px;
+  margin-top: 37px;
+  margin-bottom: 23px;
+}
+
+.form__textarea::placeholder {
+  text-align: center;
+}
+
+
+// FIXME не понимаю, как сделать так, чтобы поля были на одном уровне по правому краю
+// min-width для полей переносит текст
