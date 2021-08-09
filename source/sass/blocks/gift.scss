@@ -1,8 +1,19 @@
+.gift {
+  display: grid;
+  background-image: url("../img/index/background-cat-gift.jpg");
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  background-position: 50% 0%;
+  text-align: center;
+  min-height: 289px;
+}
+
 .gift__text {
   font-family: $default-font;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: $white;
-  background-color: $black;
 }
+
+//странно ведет себя грид - у текста меняется странным образом размер и я не могу урпавлять им
