@@ -4,8 +4,16 @@
   font-weight: 400;
 }
 
+.additional__list {
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  font-family: $default-font;
+}
+
 .additional__subtitle {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: 400;
+  font-family: $custom-font;
 }
