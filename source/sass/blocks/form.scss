@@ -20,10 +20,19 @@
   font-weight: 400;
 }
 
+.form__label {
+  color: $grey-900;
+}
+
 .form__input,
 .form__textarea {
   min-height: 46px;
   border: 1px solid $grey-210;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: $grey-900;
 }
 
 .form__textarea {
