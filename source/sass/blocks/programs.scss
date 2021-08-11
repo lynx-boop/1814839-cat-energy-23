@@ -1,6 +1,4 @@
 .programs__item {
-  position: static;
-  // нужно для того, чтобы псевдоэлементы позиционировались относительно этого блока, но я не уверена, что это правильно
   display: grid;
   background-color: $grey-100;
   margin-top: 20px;
