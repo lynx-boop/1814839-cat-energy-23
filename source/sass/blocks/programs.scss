@@ -40,7 +40,7 @@
 // FIXME почему-то не повляется псевдоэлемент, в чем может быть причина?
 
 .programs__text {
-  font-family: "Arial", sans-serif;
+  font-family: $default-font;
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-300;
   margin: 0;
