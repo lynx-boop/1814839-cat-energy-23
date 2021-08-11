@@ -33,6 +33,7 @@
 .form__input::placeholder,
 .form__textarea::placeholder {
   color: $grey-900;
+  padding: 10px 20px 11px;
 }
 
 .form__textarea {
