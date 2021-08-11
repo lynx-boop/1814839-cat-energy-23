@@ -3,7 +3,7 @@
 }
 
 .text-field__input {
-  width: 100%;
+  flex-grow: 1;
   border: 1px solid $grey-210;
   padding: 10px 20px 11px;
   font-family: $custom-font;
@@ -11,6 +11,7 @@
   line-height: 18px;
   font-weight: 400;
   color: $grey-900;
+  margin-left: 10px;
 
   &::placeholder {
     color: $grey-900;
@@ -29,5 +30,4 @@
 .text-field__label {
   color: $grey-900;
   width: max-content;
-  margin-right: 10px;
 }
