@@ -1,0 +1,38 @@
+.form {
+  display: grid;
+}
+
+.form__field {
+  display: flex;
+}
+
+.form__group {
+  display: grid;
+  border: none;
+}
+
+.form__title {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
+.form__note {
+  font-family: $default-font;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.form__label {
+  color: $grey-900;
+}
+
+.form__input::placeholder,
+.form__textarea::placeholder {
+  color: $grey-900;
+}
+
+.form__textarea::placeholder {
+  text-align: center;
+}

@@ -4,6 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Кэт энерджи</title>
+
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -22,72 +24,74 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list menu">
+      <ul class="main-nav__list menu list-reset">
         <li class="menu__item">
-          <a href="index.html" class="menu__link">Главная</a>
+          <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
         <li class="menu__item">
-          <a href="catalog.html" class="menu__link">Каталог продукции</a>
+          <a href="catalog.html" class="menu__link uppercase">Каталог продукции</a>
         </li>
         <li class="menu__item">
-          <a href="form.html" class="menu__link">Подбор программы</a>
+          <a href="form.html" class="menu__link uppercase">Подбор программы</a>
         </li>
       </ul>
+
     </nav>
   </header>
 
-  <main class="page-main">
-    <h1 class="page-main__main-title">Подбор программы</h1>
-    <p>Заполните анкету, и мы подберем программу питания для вашего кота</p>
+  <main class="page-main wrapper">
+    <h1 class="page-main__main-title page-main__main-title--form">Подбор программы</h1>
+    <p class="page-main__text uppercase">Заполните анкету, и мы подберем<br>
+      программу питания для вашего кота</p>
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
 
       <fieldset class="form__group">
         <legend class="form__title visually-hidden">Контактные данные</legend>
         <p class="form__field text-field">
-          <label class="text-field__label" for="name">
+          <label class="text-field__label uppercase" for="name">
             Имя:
             <sup>*</sup>
           </label>
-          <input class="text-field__input" id="name" type="text" name="name" placeholder="Барсик" />
+          <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
         </p>
 
         <p class="form__field text-field">
-          <label class="text-field__label" for="age">
+          <label class="text-field__label uppercase" for="weight">
             Вес (кг):
             <sup>*</sup>
           </label>
           <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
         </p>
 
-        <p class="form__field text-field">
-          <label class="text-field__label" for="weight">Возраст (лет):</label>
+        <p class="form__field text-field uppercase">
+          <label class="text-field__label" for="age">Возраст (лет):</label>
           <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
         </p>
       </fieldset>
 
       <fieldset class="form__group form__group--options">
         <legend class="form__title visually-hidden">Выбор опции</legend>
-        <ul class="form__list list-style-none">
+        <ul class="form__list list-reset">
 
           <li class="form__item radio-input">
             <label class="radio-input__label">
-              <input class="radio-input__input" type="radio" name="option" value="slimming" checked>
-              <span>Похудение</span>
+              <input class="radio-input__input visually-hidden" type="radio" name="option" value="slimming" checked>
+              <span class="uppercase">Похудение</span>
             </label>
           </li>
 
-          <li class="form__item">
-            <label class="form__label radio-input">
-              <input class="form__input" type="radio" name="option" value="weight gain">
-              <span>Набор массы</span>
+          <li class="form__item radio-input">
+            <label class="radio-input__labelt">
+              <input class="radio-input__input visually-hidden" type="radio" name="option" value="weight gain">
+              <span class="uppercase">Набор массы</span>
             </label>
           </li>
 
-          <li class="form__item">
-            <label class="form__label radio-input">
-              <input class="form__input" type="radio" name="option" value="dont know">
-              <span>Не знаю (нужен ваш совет)</span>
+          <li class="form__item radio-input">
+            <label class="radio-input__label">
+              <input class="radio-input__input visually-hidden" type="radio" name="option" value="dont know">
+              <span class="uppercase">Не знаю (нужен ваш совет)</span>
             </label>
           </li>
         </ul>
@@ -97,92 +101,97 @@
         <legend class="form__title">Контактные данные (владельца кота)</legend>
 
         <p class="form__field">
-          <label class="form__label" for="e-mail">
+          <label class="form__label uppercase" for="e-mail">
             E-mail:
             <sup>*</sup>
           </label>
-          <input class="form__input" id="e-mail" type="e-mail" name="e-mail" placeholder="kuklachev@gmail.com" />
+          <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
+            placeholder="kuklachev@gmail.com" />
         </p>
 
         <p class="form__field">
-          <label class="form__label" for="tel">
+          <label class="form__label uppercase" for="tel">
             Телефон:
             <sup>*</sup>
           </label>
-          <input class="form__input" id="tel" type="tel" name="tel" placeholder="8 (960) 900-60-90" />
+          <input class="form__input uppercase text-field__input" id="tel" type="tel" name="tel"
+            placeholder="8 (960) 900-60-90" />
         </p>
       </fieldset>
 
       <fildset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
         <legend class="form__title">Комментарий</legend>
         <label class="form__label">
-          <textarea class="form__textarea" name="comment" id="comment"
+          <textarea class="form__textarea uppercase text-field__input" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
       </fildset>
 
       <fieldset class="form__group form__group--add-options">
         <legend class="form__title">Дополнительно</legend>
-        <ul class="form__list list-style-none">
+        <ul class="form__list list-reset">
 
           <li class="form__item checkbox">
             <label class="form__label">
-              <input class="form__input" type="checkbox" name="sweetener" checked>
-              <span>Сахарозаменитель</span>
+              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+              <span class="uppercase">Сахарозаменитель</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="water">
-              <span>Питьевая вода</span>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="water">
+              <span class="uppercase">Питьевая вода</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="milk">
-              <span>Молоко</span>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="milk">
+              <span class="uppercase">Молоко</span>
             </label>
           </li>
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
-              <input class="checkbox__input" type="checkbox" name="vitamins">
-              <span>Витамины</span>
+              <input class="checkbox__input visually-hidden" type="checkbox" name="vitamins">
+              <span class="uppercase">Витамины</span>
             </label>
           </li>
         </ul>
 
-        <p class="form__note">
-          <sup>*</sup>
-          — Обязательные поля
-        </p>
       </fieldset>
-      <button class="form__button button" type="submit">Отправить заявку</button>
+      <button class="form__button button uppercase" type="submit">Отправить заявку</button>
+      <p class="form__note">
+        <sup>*</sup>
+        — Обязательные поля
+      </p>
 
     </form>
   </main>
 
-  <footer class="main-footer">
+  <footer class="page-footer">
     <h2 class="visually-hidden">Контакты</h2>
 
     <div class="wrapper">
-      <div class="main-footer__location location">
-        <h2 class="location__cooperation">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <div class="page-footer__location location">
+        <div class="location__cooperation--container">
+          <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
+
         <div class="location__map">
-          <iframe class="location__google-map"
+          <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.594445916085!2d30.32048746686707!3d59.93833828942867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627049887967!5m2!1sru!2sru"
-            width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+            allowfullscreen="" loading="lazy"></iframe>
           <img class="location__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер местоположения">
         </div>
       </div>
 
-      <img class="main-footer__text-logo" src="img/logo-text.svg" width="128" height="24"
+      <img class="page-footer__text-logo" src="img/logo-text.svg" width="128" height="24"
         alt="Текст-логотип Кэт Энерджи">
 
-      <ul class="main-footer__social-list social-list list-style-none">
+      <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
           <a class="social-list__link">
             <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
@@ -200,7 +209,7 @@
         </li>
       </ul>
 
-      <div class="partner">
+      <div class="page-footer__partner partner">
         <p class="partner__text">HTML Academy</p>
         <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="partner__img" src="img/logo-html.svg" width="27" height="34" alt="Лого HTML Academy">

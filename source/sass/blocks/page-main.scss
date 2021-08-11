@@ -1,0 +1,36 @@
+.page-main {
+  grid-template-areas: "page-header" "page-main" "page-footer";
+  grid-template-rows: auto 1fr auto;
+  font-family: $custom-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
+}
+// FIXME почему вся вторая строка грида получила такой размер? Отступ до футера коллосальный, почему?
+
+.page-main__main-title {
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 41px;
+  border-top: 1px solid $grey-300;
+  align-self: center;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+}
+
+.page-main__main-title--form {
+  padding-bottom: 37px;
+}
+
+.page-main__text {
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 39px;
+}
+
+.page-main__form {
+  margin-bottom: 30px;
+}

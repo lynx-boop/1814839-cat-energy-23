@@ -1,0 +1,54 @@
+.example {
+  display: grid;
+  background-color: $grey-200;
+  padding: 27px 20px 25px 20px;
+}
+
+.example__title {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.example__text--block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__text--main {
+  font-family: $default-font;
+}
+
+.example__text--p {
+  display: grid;
+}
+
+.example__text--min {
+  font-family: $default-font;
+  font-size: 12px;
+  line-height: 12px;
+  justify-self: center;
+}
+
+.example__text--extra {
+  justify-self: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: $custom-font;
+  margin-bottom: 16px;
+}
+
+.example__cost {
+  font-size: 14px;
+  line-height: 20px;
+  justify-self: center;
+}
+
+.example__button {
+  font-size: 16px;
+  line-height: 20px;
+  border: none;
+  background-color: transparent;
+}
