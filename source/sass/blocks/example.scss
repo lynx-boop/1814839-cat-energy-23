@@ -17,21 +17,20 @@
   justify-content: space-between;
 }
 
-.example__text {
-  display: grid;
+.example__text--main {
   font-family: $default-font;
-  margin: 0;
-  margin-bottom: 40px;
+}
+
+.example__text--p {
+  display: grid;
 }
 
 .example__text--min {
+  font-family: $default-font;
   font-size: 12px;
   line-height: 12px;
   justify-self: center;
 }
-
-// FIXME Если задаю ширину - перестают центроваться. Если добавляю <br> - перестают центроваться. Центруются только в таком
-// положении. Почему???
 
 .example__text--extra {
   justify-self: center;
