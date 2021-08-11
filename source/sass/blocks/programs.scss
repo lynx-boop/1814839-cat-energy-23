@@ -9,35 +9,36 @@
 }
 
 .programs__title {
+  position: relative;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
   margin-bottom: 30px;
   justify-self: left;
   padding-left: 70px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 
 .programs__item--slim .programs__title::before {
-  content: "";
   background-image: url("../img/index/cat-slim.svg");
   width: 50px;
   height: 53px;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .programs__item--pro .programs__title::before {
-  content: "";
   background-image: url("../img/index/cat-pro.svg");
-  width: 50px;
-  height: 53px;
-  position: relative;
-  top: 0;
-  left: 0;
+  background-repeat: no-repeat;
+  width: 67px;
+  height: 50px;
 }
 
-// FIXME почему-то не повляется псевдоэлемент, в чем может быть причина?
+// FIXME получилось после того, как родителю прописали relative, псевдоэлементу absolut можно сделать так и остальные элементы
 
 .programs__text {
   font-family: $default-font;
