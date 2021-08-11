@@ -2,6 +2,10 @@
   display: grid;
 }
 
+.form__field {
+  display: flex;
+}
+
 .form__group {
   display: grid;
   border: none;
@@ -27,13 +31,6 @@
 .form__input::placeholder,
 .form__textarea::placeholder {
   color: $grey-900;
-}
-
-.form__textarea {
-  width: 100%;
-  min-height: 150px;
-  margin-top: 37px;
-  margin-bottom: 23px;
 }
 
 .form__textarea::placeholder {
