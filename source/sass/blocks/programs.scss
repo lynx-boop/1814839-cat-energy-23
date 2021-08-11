@@ -1,7 +1,11 @@
+.programs {
+  display: grid;
+  row-gap: 20px;
+}
+
 .programs__item {
   display: grid;
   background-color: $grey-100;
-  margin-top: 20px;
   padding: 20px;
   padding-top: 30px;
 }
