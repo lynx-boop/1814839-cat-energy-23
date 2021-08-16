@@ -1,6 +1,18 @@
 .how-it-works {
   padding-top: 27px;
   padding-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 }
 
 .how-it-works__title {
@@ -8,16 +20,49 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
 }
 
 .how-it-works__list {
   font-family: $default-font;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 135px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    column-gap: 75px;
+    justify-content: space-between;
+  }
 }
 
 .how-it-works__item {
   margin: 0;
   margin-top: 24px;
   padding-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+  }
 
   &::before {
     content: "";
