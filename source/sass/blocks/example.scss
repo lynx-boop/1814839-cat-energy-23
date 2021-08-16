@@ -2,6 +2,14 @@
   display: grid;
   background-color: $grey-200;
   padding: 27px 20px 25px 20px;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+  }
 }
 
 .example__title {
@@ -15,7 +23,19 @@
 .example__text--block {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+    row-gap: 45px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-content: left;
+    row-gap: 45px;
+  }
 }
+
+//FIXME не понимаю, как сделать так, чтобы надпись "Затраты на питание....." была в одной строке с параметрами
 
 .example__text--main {
   font-family: $default-font;
