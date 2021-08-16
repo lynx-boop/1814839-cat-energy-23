@@ -1,6 +1,6 @@
 .promo {
   display: grid;
-  background-image: url("../img/index/background-cat-index.jpg");
+  // background-image: url("../img/index/background-cat-index.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: 50% 0%;
@@ -11,12 +11,24 @@
 .promo__main-title {
   font-size: 36px;
   line-height: 36px;
-  color: $white;
   font-weight: 400;
+  color: $white;
+  background-color: $green-600;
   margin-top: 27px;
   margin-bottom: 25px;
   text-align: center;
   // background-color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: $black;
+    background-color: transparent;
+    text-align: left;
+    width: 450px;
+    margin-bottom: 41px;
+  }
 }
 
 .promo__text {
@@ -24,11 +36,35 @@
   line-height: 14px;
   font-weight: 400;
   color: $white;
+  background-color: $green-600;
   margin: 0;
   margin-bottom: 29px;
   // background-color: $black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: $black;
+    background-color: transparent;
+    text-align: left;
+    width: 300px;
+    margin-bottom: 0;
+  }
+}
+
+.promo__image {
+  display: none;
 }
 
 .promo__button {
   margin-top: 3px;
+
+  @media (min-width: $tablet-width) {
+    align-self: left;
+    padding: 14px 26px;
+    margin-top: 49px;
+  }
 }
+
+//FIXME кнопка не прижимается к левому краю, как остальные элементы, почему?
