@@ -1,6 +1,6 @@
 .page-header {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-content: center;
   justify-content: space-between;
 }
@@ -17,23 +17,7 @@
   }
 }
 
-.page-header__logo--mobile {
-  display: block;
-}
-
-.page-header__logo--tablet {
+.page-header__logo--tablet,
+.page-header__logo--desktop {
   display: none;
 }
-
-//tablet
-@media (min-width: $tablet-width) {
-  .page-header__logo--mobile {
-    display: none;
-  }
-
-  .page-header__logo--tablet {
-    display: block;
-  }
-}
-// FIXME не работает, почему-то показывает только лого для пшланшета
-

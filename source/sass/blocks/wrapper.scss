@@ -1,5 +1,19 @@
 .wrapper {
-  max-width: 320px;
+  width: 320px;
   padding: 0 20px;
   margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    .wrapper {
+      width: 707px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    .wrapper {
+      width: 1220px;
+    }
+  }
 }
+
+// FIXME не меняется ширина почему-то
