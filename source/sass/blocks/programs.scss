@@ -8,6 +8,11 @@
   background-color: $grey-100;
   padding: 20px;
   padding-top: 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 53px;
+    padding-top: 77px;
+  }
 }
 
 .programs__title {
@@ -15,9 +20,17 @@
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
+  margin: 0;
   margin-bottom: 30px;
   justify-self: left;
   padding-left: 70px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 400;
+    padding: 0;
+  }
 
   &::before {
     content: "";
@@ -27,26 +40,33 @@
   }
 }
 
-.programs__item--slim .programs__title::before {
-  background-image: url("../img/index/cat-slim.svg");
-  width: 50px;
-  height: 53px;
-}
+// .programs__item--slim .programs__title::before {
+//   background-image: url("../img/index/cat-slim.svg");
+//   width: 50px;
+//   height: 53px;
+// }
 
-.programs__item--pro .programs__title::before {
-  background-image: url("../img/index/cat-pro.svg");
-  background-repeat: no-repeat;
-  width: 67px;
-  height: 50px;
-}
+// .programs__item--pro .programs__title::before {
+//   background-image: url("../img/index/cat-pro.svg");
+//   background-repeat: no-repeat;
+//   width: 67px;
+//   height: 50px;
+// }
 
-// FIXME получилось после того, как родителю прописали relative, псевдоэлементу absolut можно сделать так и остальные элементы
+//получилось после того, как родителю прописали relative, псевдоэлементу absolut можно сделать так и остальные элементы
 
 .programs__text {
   font-family: $default-font;
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-300;
   margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 340px;
+  }
 }
 
 .programs__catalog {
