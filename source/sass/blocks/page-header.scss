@@ -9,12 +9,18 @@
   align-self: center;
 }
 
-.page-header__logo-image--cat {
-  height: 38px;
-  width: 34px;
+.page-header__logo--tablet {
+  display: none;
 }
 
-.page-header__logo-image--text {
-  height: 18px;
-  width: 101px;
+//tablet
+@media (min-width: $tablet-width) {
+  .page-header__logo--mobile {
+    display: none;
+  }
+
+  .page-header__logo--tablet {
+    display: block;
+  }
 }
+// FIXME не работает почему-то, почему-то скрывает вообще все лого, и для мобильного тоже
