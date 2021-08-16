@@ -7,6 +7,18 @@
 
 .page-header__logo {
   align-self: center;
+
+  &:hover {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
+  }
+}
+
+.page-header__logo--mobile {
+  display: block;
 }
 
 .page-header__logo--tablet {
@@ -23,4 +35,5 @@
     display: block;
   }
 }
-// FIXME не работает почему-то, почему-то скрывает вообще все лого, и для мобильного тоже
+// FIXME не работает, почему-то показывает только лого для пшланшета
+
