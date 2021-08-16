@@ -1,5 +1,6 @@
 .page-header {
   display: flex;
+  flex-direction: column;
   align-content: center;
   justify-content: space-between;
 }
@@ -7,4 +8,14 @@
 
 .page-header__logo {
   align-self: center;
+}
+
+.page-header__logo-image--cat {
+  height: 38px;
+  width: 34px;
+}
+
+.page-header__logo-image--text {
+  height: 18px;
+  width: 101px;
 }
