@@ -17,6 +17,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 55px 30px 61px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    padding: 55px 30px 61px 30px;
   }
 }
 
@@ -27,9 +36,24 @@
   border-bottom: 1px solid $grey-300;
   justify-self: center;
   align-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 128px;
+    justify-self: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 128px;
+    justify-self: left;
+    padding: 0;
+    margin: 0;
+  }
 }
 
 // FIXME почему изображение не появляется? о__О
+// ПОЧЕМУ ОНО ПОЯВИЛОСЬ В ЭТОМ КОММИТЕ?! О____О
 
 .page-footer__social-list {
   width: max-content;
@@ -44,11 +68,15 @@
   @media (min-width: $tablet-width) {
     justify-items: center;
     column-gap: 20px;
+    padding: 0;
+    margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     justify-items: center;
     column-gap: 20px;
+    padding: 0;
+    margin: 0;
   }
 }
 
@@ -70,14 +98,16 @@
     justify-content: right;
     justify-self: right;
     column-gap: 22px;
+    padding: 0;
+    margin: 0;
   }
-
-  // FIXME почему-то флекс имеет огромный отступ справа, хотя контенту сказано распределиться справа
 
   @media (min-width: $desktop-width) {
     width: 163px;
     justify-content: right;
     column-gap: 22px;
+    padding: 0;
+    margin: 0;
   }
 }
 
