@@ -13,6 +13,11 @@
 
 .page-footer__contact-us {
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .page-footer__text-logo {
@@ -20,7 +25,11 @@
   margin-top: 39px;
   padding-bottom: 32px;
   border-bottom: 1px solid $grey-300;
+  justify-self: center;
+  align-self: center;
 }
+
+// FIXME почему изображение не появляется? о__О
 
 .page-footer__social-list {
   width: max-content;
@@ -31,6 +40,16 @@
   padding-bottom: 24px;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-items: center;
+    column-gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-items: center;
+    column-gap: 20px;
+  }
 }
 
 .social-list__item {
@@ -45,4 +64,20 @@
   border-top: 1px solid $grey-300;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    justify-content: right;
+    justify-self: right;
+    column-gap: 22px;
+  }
+
+  // FIXME почему-то флекс имеет огромный отступ справа, хотя контенту сказано распределиться справа
+
+  @media (min-width: $desktop-width) {
+    width: 163px;
+    justify-content: right;
+    column-gap: 22px;
+  }
 }
+
