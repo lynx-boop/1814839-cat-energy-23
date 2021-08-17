@@ -13,6 +13,7 @@
 
 .page-footer__contact-us {
   display: grid;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     display: grid;
