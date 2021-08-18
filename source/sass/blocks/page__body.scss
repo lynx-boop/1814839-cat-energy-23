@@ -1,0 +1,4 @@
+.page__body {
+  display: grid;
+  grid-template-areas: "page-header" "page-main" "page-footer";
+}

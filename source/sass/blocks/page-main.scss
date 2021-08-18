@@ -1,5 +1,4 @@
 .page-main {
-  grid-template-areas: "page-header" "page-main" "page-footer";
   grid-template-rows: auto 1fr auto;
   font-family: $custom-font;
   font-size: 14px;
