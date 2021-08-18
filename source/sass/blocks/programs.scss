@@ -11,7 +11,7 @@
   @media (min-width: $desktop-width) {
     justify-content: space-between;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 80px;
+    gap: 30px 80px;
   }
 }
 
