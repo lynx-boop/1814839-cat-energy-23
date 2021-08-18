@@ -38,7 +38,6 @@
   display: inline-block;
   width: 100%;
   padding: 39px 96px 32px 96px;
-  border-bottom: 1px solid $grey-300;
   justify-self: center;
   align-self: center;
 
@@ -62,12 +61,12 @@
 // ПОЧЕМУ ОНО ПРОПАЛО В предыдущем КОММИТЕ ТОЛЬКО У МОБИЛЬНОЙ ВЕРСИИ?!
 
 .page-footer__social-list {
-  width: max-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 35px;
+  width: 100%;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-top: 1px solid $grey-300;
+  border-bottom: 1px solid $grey-300;
   justify-content: center;
   align-items: center;
 
@@ -89,13 +88,16 @@
 .social-list__item {
   justify-self: center;
   align-self: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .page-footer__partner {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid $grey-300;
   padding-top: 22px;
   padding-bottom: 22px;
 
