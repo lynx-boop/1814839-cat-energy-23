@@ -10,7 +10,14 @@
   @media (min-width: $tablet-width) {
     background-image: none;
   }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/index/background-cat-index-big.jpg");
+    // background-position: right -100px; не сработало
+  }
 }
+
+// FIXME не знаю, как фоновое изображение натянуть и на меню
 
 .promo__main-title {
   font-size: 36px;
