@@ -78,6 +78,7 @@
   padding-bottom: 23px;
   border-bottom: 1px solid $grey-300;
   margin: 0;
+  margin-bottom: 15px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -90,7 +91,6 @@
 .programs__catalog {
   font-size: 16px;
   line-height: 16px;
-  margin-top: 19px;
 }
 
 .programs__catalog::after {
