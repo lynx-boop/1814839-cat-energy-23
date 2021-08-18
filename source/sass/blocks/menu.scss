@@ -6,6 +6,6 @@
   color: var(--black);
 }
 
-.menu__item {
-  margin-left: 34px;
+.menu__item:not(:last-child) {
+  margin-right: 34px;
 }

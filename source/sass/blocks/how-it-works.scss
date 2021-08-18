@@ -10,8 +10,8 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding-top: 45px;
-    padding-bottom: 45px;
+    padding-top: 70px;
+    padding-bottom: 11px;
   }
 }
 
@@ -41,7 +41,7 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 135px;
+    gap: 37px 153px;
     justify-content: space-between;
   }
 
@@ -59,10 +59,15 @@
 
   &:not(:first-child) {
     margin-top: 24px;
+
+    @media (min-width: $tablet-width) {
+      margin: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
     padding: 0;
+    margin: 0;
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
