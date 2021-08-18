@@ -3,6 +3,15 @@
   background-color: $grey-100;
 }
 
+.page-footer__location {
+  display: grid;
+  background-color: $white;
+
+  // @media (min-width: $desktop-width) {
+  //   position: absolute;
+  // } FIXME выпадает из потока
+}
+
 .page-footer__text-logo,
 .page-footer__social-list,
 .page-footer__partner,
@@ -26,7 +35,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-content: space-between;
-    padding: 55px 30px 61px 30px;
+    padding: 57px 110px;
   }
 }
 
