@@ -40,15 +40,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 37px 153px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 90px 60px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    column-gap: 75px;
+    grid-template-rows: 1fr;
+    gap: 80px;
     justify-content: space-between;
   }
 }
@@ -56,6 +56,70 @@
 .how-it-works__item {
   margin: 0;
   padding-left: 80px;
+
+  &--leaf {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  &--boil {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  &--cutlery {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
+
+  &--scales {
+    @media (min-width: $tablet-width) {
+      grid-column-start: 3;
+      grid-column-end: 5;
+      grid-row-start: 2;
+      grid-row-end: 3;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+  }
 
   &:not(:first-child) {
     margin-top: 24px;
