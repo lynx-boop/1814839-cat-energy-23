@@ -10,12 +10,17 @@
 
   @media (min-width: $tablet-width) {
     background-image: none;
-    height: 810px;
+    padding-bottom: 0;
+    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
+    height: 553px;
+    margin-bottom: 82px;
     background-image: url("../img/index/background-cat-index-big.jpg");
-    // background-position: right -100px; не сработало
+    background-position: right -100px;
+    background-size: 720px 694px;
+    text-align: left;
   }
 }
 
@@ -37,9 +42,12 @@
     color: $black;
     background-color: transparent;
     text-align: left;
-    width: 570px;
-    margin-bottom: 41px;
+    margin-bottom: 40px;
     padding-left: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
   }
 }
 
@@ -58,8 +66,12 @@
     color: $black;
     background-color: transparent;
     text-align: left;
-    width: 420px;
     padding-left: 119px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 190px;
+    margin-bottom: 52px;
   }
 }
 
@@ -79,12 +91,13 @@
 // FIXME почему-то кнопка исчезает, даже если использовать z-index, а нижние блоки наползают на изображение
 
 .promo__button {
-  margin-top: 3px;
-
   @media (min-width: $tablet-width) {
     align-self: left;
     padding: 14px 26px;
-    margin-top: 49px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 190px;
   }
 }
 
