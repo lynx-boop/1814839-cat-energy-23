@@ -1,12 +1,15 @@
 .promo {
-  display: grid;
-  // background-image: url("../img/index/background-cat-index.jpg");
-  background-color: $green-600;
+  background-image: url("../img/index/background-cat-index.jpg");
+  // background-size: 100%;
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: 50% 0%;
   text-align: center;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .promo__main-title {
@@ -38,7 +41,6 @@
   color: $white;
   margin: 0;
   margin-bottom: 29px;
-  // background-color: $black;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -54,7 +56,7 @@
 }
 
 .promo__image {
-  display: none;
+  display: inline-block;
 }
 
 .promo__button {
