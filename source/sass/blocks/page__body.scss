@@ -1,4 +1,11 @@
 .page__body {
   display: grid;
   grid-template-areas: "page-header" "page-main" "page-footer";
+  grid-template-rows: auto 1fr auto;
+  font-family: $custom-font;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  font-style: normal;
+  min-height: 100%;
 }
