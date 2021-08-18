@@ -4,12 +4,7 @@
 }
 
 .page-footer__location {
-  display: grid;
   background-color: $white;
-
-  // @media (min-width: $desktop-width) {
-  //   position: absolute;
-  // } FIXME выпадает из потока
 }
 
 .page-footer__text-logo,
@@ -40,9 +35,9 @@
 }
 
 .page-footer__text-logo {
+  display: inline-block;
   width: 100%;
-  margin-top: 39px;
-  padding-bottom: 32px;
+  padding: 39px 96px 32px 96px;
   border-bottom: 1px solid $grey-300;
   justify-self: center;
   align-self: center;

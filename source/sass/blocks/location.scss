@@ -13,8 +13,8 @@
   @media (min-width: $desktop-width) {
     position: absolute;
     z-index: 1;
-    top: 15%;
-    left: 10%;
+    top: 25%;
+    left: 5%;
     padding: 63px 89px 52px 76px;
     width: 570px;
     height: 201px;
@@ -63,21 +63,14 @@
 }
 
 .location__map {
-  min-width: 100%;
-  min-height: 362px;
-  position: relative;
-  z-index: 0;
+  width: 100%;
+  height: 362px;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 
   iframe {
-    width: 100%;
-    height: 100%;
     border: none;
   }
-}
-
-.location__pin {
-  position: relative;
-  top: -220px;
-  left: 120px;
-  z-index: 1;
 }
