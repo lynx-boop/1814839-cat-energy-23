@@ -1,43 +1,35 @@
 .main-nav__list {
-  display: block;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    color: $white;
+    background-color: $green-600;
+  }
 }
 
 .main-nav__toggle {
   border: none;
   background-color: transparent;
   // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__list {
-    width: 440px;
-    height: 36px;
-    font-size: 18px;
-    line-height: 24px;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: $tablet-width) {
     display: none;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .main-nav__list {
-    width: 478px;
-    height: 40px;
-    font-size: 20px;
-    line-height: 30px;
-    font-weight: 400;
-    display: flex;
-    justify-content: space-between;
-    color: $white;
-    background-color: $green-600;
-  }
-
-  .main-nav__toggle {
+  @media (min-width: $desktop-width) {
     display: none;
   }
 }
