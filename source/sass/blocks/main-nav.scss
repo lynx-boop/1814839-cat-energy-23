@@ -24,6 +24,19 @@
 .main-nav__toggle {
   border: none;
   background-color: transparent;
+
+  &--open {
+    .menu {
+      display: block;
+    }
+  }
+
+  &--close {
+    .menu {
+      display: none;
+      
+    }
+  }
   // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
   @media (min-width: $tablet-width) {
     display: none;
