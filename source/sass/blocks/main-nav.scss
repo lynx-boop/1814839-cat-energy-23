@@ -23,7 +23,24 @@
 
 .main-nav__toggle {
   border: none;
+  border-top: 2px solid $black;
+  border-bottom: 2px solid $black;
   background-color: transparent;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+
+  &::before {
+    display: block;
+    content: "";
+    width: 24px;
+    height: 2px;
+    background-color: $black;
+    position: absolute;
+    left: 0;
+    top: 45%;
+  }
 
   &--open {
     .menu {
@@ -34,7 +51,6 @@
   &--close {
     .menu {
       display: none;
-      
     }
   }
   // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
