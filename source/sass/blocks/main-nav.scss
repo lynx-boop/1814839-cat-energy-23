@@ -31,17 +31,6 @@
   position: relative;
   top: 4px;
 
-  &::before {
-    display: block;
-    content: "";
-    width: 24px;
-    height: 2px;
-    background-color: $black;
-    position: absolute;
-    left: 0;
-    top: 45%;
-  }
-
   &--open {
     .menu {
       display: block;
@@ -51,6 +40,17 @@
   &--close {
     .menu {
       display: none;
+    }
+
+    &::before {
+      display: block;
+      content: "";
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      position: absolute;
+      left: 0;
+      top: 45%;
     }
   }
   // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
