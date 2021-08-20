@@ -1,5 +1,5 @@
 .promo {
-  background-image: url("../img/index/background-cat-index.jpg");
+  background-image: url("../img/index/background-cat-mobile.jpg");
   // background-size: 100%;
   background-repeat: no-repeat;
   background-origin: content-box;
@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     height: 553px;
     margin-bottom: 82px;
-    background-image: url("../img/index/background-cat-index-big.jpg");
+    background-image: url("../img/index/background-desktop.jpg");
     background-position: right -100px;
     background-size: 720px 694px;
     text-align: left;

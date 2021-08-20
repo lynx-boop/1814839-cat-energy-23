@@ -23,8 +23,6 @@
 
 .main-nav__toggle {
   border: none;
-  border-top: 2px solid $black;
-  border-bottom: 2px solid $black;
   background-color: transparent;
   width: 24px;
   height: 18px;
@@ -35,20 +33,31 @@
     .menu {
       display: block;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
   }
 
   &--close {
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+
     .menu {
       display: none;
     }
 
     &::before {
-      display: block;
       content: "";
+      position: absolute;
+      display: block;
       width: 24px;
       height: 2px;
       background-color: $black;
-      position: absolute;
       left: 0;
       top: 45%;
     }
