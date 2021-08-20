@@ -28,6 +28,7 @@
 .example__text {
   margin: 0;
   margin-bottom: 25px;
+  font-family: $default-font;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -35,11 +36,7 @@
   }
 }
 
-.example__text--main {
-  font-family: $default-font;
-}
-
-.example__text--block {
+.example__text-container {
   justify-content: space-between;
   margin-bottom: 42px;
 
@@ -53,7 +50,7 @@
   }
 }
 
-.example__text--span {
+.example__span {
   display: flex;
   justify-content: space-between;
 
@@ -65,14 +62,14 @@
 
 //FIXME не понимаю, как сделать так, чтобы надпись "Затраты на питание....." была в одной строке с параметрами
 
-.example__text--p {
+.example__p {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
   margin: 0;
 }
 
-.example__text--extra {
+.example__extra {
   text-align: center;
   font-size: 24px;
   line-height: 24px;
@@ -85,7 +82,7 @@
   }
 }
 
-.example__text--min {
+.example__min {
   text-align: center;
   font-family: $default-font;
   font-size: 12px;
