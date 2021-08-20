@@ -30,9 +30,10 @@
   top: 4px;
 
   &--open {
-    .menu {
-      display: block;
-    }
+    // .menu {
+    //   display: block;
+    // }
+    // FIXME блок не должен влиять на другой блок, пока оставить, потом разберем
 
     &::before {
       content: "";
