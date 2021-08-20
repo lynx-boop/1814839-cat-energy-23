@@ -4,8 +4,7 @@
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px 60px;
+    row-gap: 30px;
   }
 }
 
@@ -13,35 +12,6 @@
   background-color: $grey-100;
   padding: 20px;
   padding-top: 30px;
-
-  &--slim {
-    @media (min-width: $tablet-width) {
-      grid-column-start: 1;
-      grid-column-end: -1;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column-start: 1;
-      grid-column-end: 3;
-    }
-  }
-
-  &--pro {
-    @media (min-width: $tablet-width) {
-      grid-column-start: 1;
-      grid-column-end: -1;
-    }
-
-    @media (min-width: $desktop-width) {
-      grid-column-start: 3;
-      grid-column-end: 5;
-    }
-  }
-
-  @media (min-width: $tablet-width) {
-    padding: 53px;
-    padding-top: 77px;
-  }
 }
 
 .programs__title {
