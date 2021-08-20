@@ -16,7 +16,6 @@
 }
 
 .page-footer__contact-us {
-  display: grid;
   width: 100%;
 
   @media (min-width: $tablet-width) {
@@ -27,9 +26,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    justify-content: space-between;
     padding: 57px 110px;
   }
 }
@@ -45,20 +41,10 @@
     width: 128px;
     justify-self: left;
     padding: 0;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 128px;
-    justify-self: left;
-    padding: 0;
-    margin: 0;
   }
 }
 
 // FIXME почему изображение не появляется? о__О
-// ПОЧЕМУ ОНО ПОЯВИЛОСЬ В ЭТОМ КОММИТЕ?! О____О
-// ПОЧЕМУ ОНО ПРОПАЛО В предыдущем КОММИТЕ ТОЛЬКО У МОБИЛЬНОЙ ВЕРСИИ?!
 
 .page-footer__social-list {
   width: 100%;
@@ -105,14 +91,6 @@
     width: 163px;
     justify-content: right;
     justify-self: right;
-    column-gap: 22px;
-    padding: 0;
-    margin: 0;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 163px;
-    justify-content: right;
     column-gap: 22px;
     padding: 0;
     margin: 0;
