@@ -3,6 +3,11 @@
   align-content: center;
   justify-content: space-between;
   padding: 24px 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 29px;
+  }
 }
 
 .page-header__logo {
