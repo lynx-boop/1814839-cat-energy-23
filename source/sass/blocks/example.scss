@@ -36,67 +36,8 @@
   }
 }
 
-.example__text-container {
-  justify-content: space-between;
-  margin-bottom: 42px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: grid;
-  }
-}
-
-.example__span {
-  display: flex;
-  justify-content: space-between;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    column-gap: 42px;
-  }
-}
-
-//FIXME не понимаю, как сделать так, чтобы надпись "Затраты на питание....." была в одной строке с параметрами
-
-.example__p {
-  display: flex;
-  flex-direction: column;
-  row-gap: 16px;
-  margin: 0;
-}
-
-.example__extra {
-  text-align: center;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: $custom-font;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 30px;
-    line-height: 37px;
-  }
-}
-
-.example__min {
-  text-align: center;
-  font-family: $default-font;
-  font-size: 12px;
-  line-height: 12px;
-  justify-self: center;
-  margin: 0;
-
-  @media (min-width: $tablet-width) {
-    font-size: 14px;
-    line-height: 14px;
-  }
-}
-
 .example__cost {
+  font-family: $custom-font;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
