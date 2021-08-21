@@ -1,7 +1,15 @@
 .example {
-  display: grid;
+  width: 100%;
   background-color: $grey-200;
-  padding: 27px 20px 25px 20px;
+  padding-top: 27px;
+  padding-bottom: 25px;
+}
+
+.example__inner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
@@ -10,40 +18,37 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
-.example__text--block {
-  display: flex;
-  justify-content: space-between;
-}
-
-.example__text--main {
+.example__text {
+  margin: 0;
+  margin-bottom: 25px;
   font-family: $default-font;
-}
 
-.example__text--p {
-  display: grid;
-}
-
-.example__text--min {
-  font-family: $default-font;
-  font-size: 12px;
-  line-height: 12px;
-  justify-self: center;
-}
-
-.example__text--extra {
-  justify-self: center;
-  font-size: 24px;
-  line-height: 24px;
-  font-family: $custom-font;
-  margin-bottom: 16px;
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__cost {
+  font-family: $custom-font;
   font-size: 14px;
   line-height: 20px;
-  justify-self: center;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+  }
 }
 
 .example__button {

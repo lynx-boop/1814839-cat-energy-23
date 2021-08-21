@@ -2,9 +2,22 @@
   display: flex;
   align-content: center;
   justify-content: space-between;
+  padding: 24px 30px;
+
+  @media (min-width: $desktop-width) {
+    padding-top: 53px;
+    padding-bottom: 29px;
+  }
 }
-// не понимаю, почему не работает код
 
 .page-header__logo {
   align-self: center;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }

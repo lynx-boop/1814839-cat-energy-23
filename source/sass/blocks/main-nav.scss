@@ -1,9 +1,73 @@
 .main-nav__list {
-  display: block;
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    color: $black;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 400;
+    display: flex;
+    justify-content: right;
+    color: $white;
+  }
 }
 
 .main-nav__toggle {
   border: none;
   background-color: transparent;
+  width: 24px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+
+  &--open {
+    // .menu {
+    //   display: block;
+    // }
+    // FIXME блок не должен влиять на другой блок, пока оставить, потом разберем
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  &--close {
+    border-top: 2px solid $black;
+    border-bottom: 2px solid $black;
+
+    .menu {
+      display: none;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+      left: 0;
+      top: 45%;
+    }
+  }
   // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

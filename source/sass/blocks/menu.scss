@@ -5,3 +5,7 @@
   text-transform: uppercase;
   color: var(--black);
 }
+
+.menu__item:not(:last-child) {
+  margin-right: 34px;
+}

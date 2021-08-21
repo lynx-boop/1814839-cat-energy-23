@@ -3,6 +3,10 @@
   background-color: $grey-100;
 }
 
+.page-footer__location {
+  background-color: $white;
+}
+
 .page-footer__text-logo,
 .page-footer__social-list,
 .page-footer__partner,
@@ -11,34 +15,84 @@
   align-self: center;
 }
 
-.page-footer__text-logo {
-  width: 100%;
-  margin-top: 39px;
-  padding-bottom: 32px;
-  border-bottom: 1px solid $grey-300;
+.page-footer__contact-us {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 55px 30px 61px 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 57px 110px;
+  }
 }
 
+.page-footer__link {
+  padding: 39px 96px 32px 96px;
+  justify-self: center;
+  align-self: center;
+
+  @media (min-width: $tablet-width) {
+    justify-self: left;
+    padding: 0;
+  }
+}
+
+.page-footer__text-logo {
+  width: 128px;
+  height: 24px;
+}
+
+// FIXME теперь изображение есть, но ни марджины, ни паддинги не работают о__О Как это исправить?
+
 .page-footer__social-list {
-  width: max-content;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 35px;
+  display: flex;
   padding-top: 24px;
   padding-bottom: 24px;
+  border-top: 1px solid $grey-300;
+  border-bottom: 1px solid $grey-300;
   justify-content: center;
   align-items: center;
+
+  @media (min-width: $tablet-width) {
+    justify-items: center;
+    column-gap: 20px;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    justify-items: center;
+    column-gap: 20px;
+    padding: 0;
+  }
 }
 
 .social-list__item {
   justify-self: center;
   align-self: center;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .page-footer__partner {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  border-top: 1px solid $grey-300;
   padding-top: 22px;
   padding-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    width: 163px;
+    justify-content: right;
+    justify-self: right;
+    column-gap: 22px;
+    padding: 0;
+    margin: 0;
+  }
 }
+
