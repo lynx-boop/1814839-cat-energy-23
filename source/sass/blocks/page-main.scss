@@ -1,7 +1,9 @@
+.page-main {
+  padding-top: 27px;
+}
+
 .page-main__main-title {
   margin: 0;
-  padding-top: 27px;
-  padding-bottom: 41px;
   border-top: 1px solid $grey-300;
   align-self: center;
   font-size: 36px;
@@ -12,15 +14,16 @@
     font-size: 60px;
     line-height: 60px;
   }
-}
 
-.page-main__main-title--form {
-  padding-bottom: 37px;
+  &--form {
+    margin-bottom: 37px;
+  }
 }
 
 .page-main__text {
   font-size: 14px;
   line-height: 18px;
+  margin: 0;
   margin-bottom: 39px;
 }
 
