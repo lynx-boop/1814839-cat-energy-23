@@ -1,5 +1,15 @@
 .text-field {
   margin: 0;
+  align-items: center;
+
+  &:not(:last-child) {
+    margin-bottom: 12px;
+  }
+}
+
+.text-field__label {
+  color: $grey-900;
+  width: max-content;
 }
 
 .text-field__input {
@@ -24,10 +34,4 @@
     margin-bottom: 23px;
     resize: vertical;
   }
-}
-
-
-.text-field__label {
-  color: $grey-900;
-  width: max-content;
 }

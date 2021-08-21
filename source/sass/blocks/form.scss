@@ -1,20 +1,22 @@
-.form {
-  display: grid;
+.form__group {
+  border: none;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 25px;
+  border-bottom: 1px solid $grey-300;
+  margin-bottom: 20px;
 }
 
 .form__field {
   display: flex;
 }
 
-.form__group {
-  display: grid;
-  border: none;
-}
-
 .form__title {
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 35px;
 }
 
 .form__note {
@@ -28,11 +30,27 @@
   color: $grey-900;
 }
 
-.form__input::placeholder,
-.form__textarea::placeholder {
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 9px 15px;
+  flex-grow: 1;
+  border: 1px solid $grey-210;
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   color: $grey-900;
+
+  &::placeholder {
+    text-align: center;
+  }
+
+  .form__item:not(:last-child) {
+      margin-bottom: 19px;
+    }
 }
 
-.form__textarea::placeholder {
-  text-align: center;
-}
+// FIXME почему-то в инспекторе кода не отображается контейнер <fildset class="form__group form__group--comment" для этого блока
+// Из-за этого невозможно установит марджины
