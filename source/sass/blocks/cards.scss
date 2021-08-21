@@ -1,7 +1,10 @@
-
-
 .cards__list {
   display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 60px;
+  }
 }
 
 .cards__item {
@@ -9,6 +12,12 @@
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $grey-300;
   padding: 19px 0 25px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr;
+    padding: 36px 38px 38px 38px;
+    justify-content: center;
+  }
 }
 
 .card__link {
@@ -17,6 +26,41 @@
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
+}
+// FIXME возникли проблемы с тем, как оцентровать заголовок и заставить его вести себя как на макете в таблет версии.
+// Попробовала разные способы - задавать размер контейнеру, использовать флекс - все без толку.
+// Почему так происходит и как это поправить? Откуда взялся правый марджин, если я все марджины обнулила?
+.card__title {
+  margin: 0;
+  // margin-bottom: 14px;
+  font-family: $custom-font;
+  font-weight: 400;
+  width: 76px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    width: auto;
+    margin-bottom: 21px;
+  }
+
+  &--show-more {
+    width: auto;
+    grid-template-columns: 1fr;
+    padding: 78px 0 25px 0;
+    background-image: url("../img/index/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25px;
+    border-bottom: 1px solid $grey-300;
+    margin-bottom: 8px;
+  }
+}
+
+.card__stats {
+  margin: 0;
+  margin-bottom: 42px;
 }
 
 .card__desc,
@@ -30,28 +74,33 @@
 .card__text {
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+  &--dt {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--dd {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.card__title {
-  margin: 0;
-  margin-bottom: 14px;
-  font-family: $custom-font;
-  font-weight: 400;
-}
 
 .card__button {
   grid-column-start: 1;
   grid-column-end: -1;
-}
 
-.card--show-more {
-  grid-template-columns: 1fr;
-  padding: 78px 0 25px 0;
-  background-image: url("../img/index/icon-plus.svg");
-  background-repeat: no-repeat;
-  background-position-x: center;
-  background-position-y: 25px;
-  border-bottom: 1px solid $grey-300;
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    padding: 0;
+  }
 }
 
 .card__button--show {
@@ -63,10 +112,6 @@
 .card__text--show-more {
   margin: 0;
   justify-self: center;
-}
-
-.card__title--show-more {
-  margin-bottom: 8px;
 }
 
 .card__text--show-more {
