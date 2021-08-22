@@ -42,7 +42,7 @@
     </nav>
   </header>
 
-  <main class="page-main wrapper">
+  <main class="page-main wrapper wrapper--catalog">
     <h1 class="page-main__main-title page-main__main-title--form">Подбор программы</h1>
     <p class="page-main__text uppercase">Заполните анкету, и мы подберем<br>
       программу питания для вашего кота</p>
@@ -135,8 +135,8 @@
         <ul class="form__list list-reset">
 
           <li class="form__item checkbox">
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+            <label class="checkbox__label">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
               <span class="uppercase">Сахарозаменитель</span>
             </label>
           </li>
@@ -164,11 +164,14 @@
         </ul>
 
       </fieldset>
-      <button class="form__button button uppercase" type="submit">Отправить заявку</button>
-      <p class="form__note">
-        <sup>*</sup>
-        — Обязательные поля
-      </p>
+
+      <div class="form__inner">
+        <button class="form__button button uppercase" type="submit">Отправить заявку</button>
+        <p class="form__note">
+          <sup>*</sup>
+          — Обязательные поля
+        </p>
+      </div>
 
     </form>
   </main>

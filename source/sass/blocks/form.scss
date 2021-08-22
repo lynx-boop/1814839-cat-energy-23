@@ -5,6 +5,23 @@
   padding-bottom: 25px;
   border-bottom: 1px solid $grey-300;
   margin-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 71px;
+    margin-bottom: 0;
+  }
+
+  &--options {
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+}
+
+.form__list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .form__field {
@@ -17,6 +34,12 @@
   font-weight: 400;
   margin: 0;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__note {
@@ -24,10 +47,20 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
 }
 
-.form__label {
+.checkbox__label {
   color: $grey-900;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .form__textarea {
@@ -46,10 +79,26 @@
   &::placeholder {
     text-align: center;
   }
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
 }
 
 .form__item {
-  margin-bottom: 25px;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 25px;
+  }
 }
-// FIXME почему-то в инспекторе кода не отображается контейнер <fildset class="form__group form__group--comment" для этого блока
-// Из-за этого невозможно установит марджины
+
+.form__inner {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+}

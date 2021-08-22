@@ -17,6 +17,10 @@
 
   &--form {
     margin-bottom: 37px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 54px;
+    }
   }
 }
 
@@ -25,4 +29,10 @@
   line-height: 18px;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }

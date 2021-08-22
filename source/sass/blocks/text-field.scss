@@ -5,11 +5,22 @@
   &:not(:last-child) {
     margin-bottom: 12px;
   }
+
+  @media (min-width: $tablet-width) {
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
 }
 
 .text-field__label {
   color: $grey-900;
   width: max-content;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .text-field__input {
@@ -27,11 +38,11 @@
     color: $grey-900;
   }
 
-  &--textarea {
-    width: 100%;
-    height: 150px;
-    margin-top: 37px;
-    margin-bottom: 23px;
-    resize: vertical;
-  }
+  // &--textarea {
+  //   width: 100%;
+  //   height: 150px;
+  //   margin-top: 37px;
+  //   margin-bottom: 23px;
+  //   resize: vertical;
+  // } FIXME странные свойства, вроде бы ни на что не влияют, хз откуда они тут вообще, наверное, надо удалить
 }
