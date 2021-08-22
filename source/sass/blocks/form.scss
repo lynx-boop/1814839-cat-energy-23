@@ -46,11 +46,10 @@
   &::placeholder {
     text-align: center;
   }
-
-  .form__item:not(:last-child) {
-      margin-bottom: 19px;
-    }
 }
 
+.form__item {
+  margin-bottom: 25px;
+}
 // FIXME почему-то в инспекторе кода не отображается контейнер <fildset class="form__group form__group--comment" для этого блока
 // Из-за этого невозможно установит марджины
