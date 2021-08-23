@@ -1,13 +1,18 @@
 .gift {
-  display: grid;
   background-image: url("../img/index/background-cat-gift.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: 50% 0%;
-  text-align: center;
-  min-height: 289px;
-  margin-top: 35px;
+  height: 289px;
   margin-bottom: 35px;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: $green-600;
+    height: 200px;
+    margin-bottom: 76px;
+    padding-right: 124px;
+  }
 }
 
 .gift__text {
@@ -16,6 +21,12 @@
   line-height: 20px;
   font-weight: 400;
   color: $white;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 422px;
+    vertical-align: middle;
+  }
 }
 
-//странно ведет себя грид - у текста меняется странным образом размер и я не могу урпавлять им
+// FIXME почему-то не примеянется vertical-align. Как этло исправить?
