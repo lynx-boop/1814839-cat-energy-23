@@ -23,9 +23,6 @@
 .card__link {
   justify-self: center;
   align-self: center;
-  font-size: 16px;
-  line-height: 20px;
-  font-weight: 400;
 }
 // FIXME возникли проблемы с тем, как оцентровать заголовок и заставить его вести себя как на макете в таблет версии.
 // Попробовала разные способы - задавать размер контейнеру, использовать флекс - все без толку.
@@ -34,8 +31,11 @@
   margin: 0;
   // margin-bottom: 14px;
   font-family: $custom-font;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 400;
   width: 76px;
+  color: $grey-970;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -46,6 +46,8 @@
   }
 
   &--show-more {
+    margin: 0;
+    justify-self: center;
     width: auto;
     grid-template-columns: 1fr;
     padding: 78px 0 25px 0;
@@ -74,10 +76,14 @@
 .card__text {
   display: flex;
   justify-content: space-between;
+  font-size: 16px;
+  line-height: 16px;
+  color: $grey-900;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
   }
+
 
   &--dt {
     @media (min-width: $tablet-width) {
@@ -90,8 +96,21 @@
       margin-bottom: 0;
     }
   }
-}
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &--show-more {
+    margin: 0;
+    text-align: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+    }
+  }
+}
 
 .card__button {
   grid-column-start: 1;
@@ -108,12 +127,4 @@
   color: $grey-900;
 }
 
-.card__title--show-more,
-.card__text--show-more {
-  margin: 0;
-  justify-self: center;
-}
-
-.card__text--show-more {
-  margin-bottom: 21px;
-}
+// FIXME почему кнопки так себя ведут, как это можно исправить?
