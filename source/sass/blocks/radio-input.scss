@@ -1,5 +1,17 @@
 .radio-input {
   font-size: 16px;
+  padding-left: 66px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
+
+.radio-input__label {
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .radio-input__input {

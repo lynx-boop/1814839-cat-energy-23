@@ -1,0 +1,24 @@
+.checkbox {
+  padding-left: 46px;
+
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 60px;
+
+    &:not(:last-child) {
+      margin: 0;
+    }
+  }
+
+  .checkbox__label {
+    color: $grey-900;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

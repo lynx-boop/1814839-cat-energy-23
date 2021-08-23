@@ -27,7 +27,7 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list menu list-reset">
+      <ul class="main-nav__list main-nav__list--form menu list-reset">
         <li class="menu__item">
           <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
@@ -49,77 +49,81 @@
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="form__group">
-        <legend class="form__title visually-hidden">Контактные данные</legend>
-        <p class="form__field text-field">
-          <label class="text-field__label uppercase" for="name">
-            Имя:
-            <sup>*</sup>
-          </label>
-          <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
-        </p>
-
-        <p class="form__field text-field">
-          <label class="text-field__label uppercase" for="weight">
-            Вес (кг):
-            <sup>*</sup>
-          </label>
-          <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
-        </p>
-
-        <p class="form__field text-field uppercase">
-          <label class="text-field__label" for="age">Возраст (лет):</label>
-          <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
-        </p>
-      </fieldset>
-
-      <fieldset class="form__group form__group--options">
-        <legend class="form__title visually-hidden">Выбор опции</legend>
-        <ul class="form__list list-reset">
-
-          <li class="form__item radio-input">
-            <label class="radio-input__label">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="slimming" checked>
-              <span class="uppercase">Похудение</span>
+      <div class="form__container">
+        <fieldset class="form__group">
+          <legend class="form__title visually-hidden">Контактные данные</legend>
+          <p class="form__field text-field text-field--contacts">
+            <label class="text-field__label uppercase" for="name">
+              Имя:
+              <sup>*</sup>
             </label>
-          </li>
+            <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
+          </p>
 
-          <li class="form__item radio-input">
-            <label class="radio-input__labelt">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="weight gain">
-              <span class="uppercase">Набор массы</span>
+          <p class="form__field text-field text-field--contacts">
+            <label class="text-field__label uppercase" for="weight">
+              Вес (кг):
+              <sup>*</sup>
             </label>
-          </li>
+            <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
+          </p>
 
-          <li class="form__item radio-input">
-            <label class="radio-input__label">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="dont know">
-              <span class="uppercase">Не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+          <p class="form__field text-field text-field--contacts">
+            <label class="text-field__label uppercase" for="age">Возраст (лет):</label>
+            <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
+          </p>
+        </fieldset>
+
+        <fieldset class="form__group form__group--options">
+          <legend class="form__title visually-hidden">Выбор опции</legend>
+          <ul class="form__list form__list--radio list-reset">
+
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="slimming" checked>
+                <span class="uppercase">Похудение</span>
+              </label>
+            </li>
+
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="weight gain">
+                <span class="uppercase">Набор массы</span>
+              </label>
+            </li>
+
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="dont know">
+                <span class="uppercase">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form__group form__group--contacts">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
 
-        <p class="form__field text-field">
-          <label class="form__label uppercase" for="e-mail">
-            E-mail:
-            <sup>*</sup>
-          </label>
-          <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
-            placeholder="kuklachev@gmail.com" />
-        </p>
+        <div class="form__container">
+          <p class="form__field text-field">
+            <label class="form__label uppercase" for="e-mail">
+              E-mail:
+              <sup>*</sup>
+            </label>
+            <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
+              placeholder="kuklachev@gmail.com" />
+          </p>
 
-        <p class="form__field text-field">
-          <label class="form__label uppercase" for="tel">
-            Телефон:
-            <sup>*</sup>
-          </label>
-          <input class="form__input uppercase text-field__input" id="tel" type="tel" name="tel"
-            placeholder="8 (960) 900-60-90" />
-        </p>
+          <p class="form__field text-field">
+            <label class="form__label uppercase" for="tel">
+              Телефон:
+              <sup>*</sup>
+            </label>
+            <input class="form__input uppercase text-field__input" id="tel" type="tel" name="tel"
+              placeholder="8 (960) 900-60-90" />
+          </p>
+        </div>
       </fieldset>
 
       <fieldset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
@@ -132,7 +136,7 @@
 
       <fieldset class="form__group form__group--add-options">
         <legend class="form__title">Дополнительно</legend>
-        <ul class="form__list list-reset">
+        <ul class="form__list form__list--add-options list-reset">
 
           <li class="form__item checkbox">
             <label class="checkbox__label">
