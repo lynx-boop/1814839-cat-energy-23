@@ -3,6 +3,14 @@
   padding-bottom: 36px;
 }
 
+.additional__inner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    column-gap: 80px;
+  }
+}
+
 .additional__title {
   margin: 0;
   margin-bottom: 36px;
@@ -34,6 +42,12 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 38px;
   }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 .additional__description {
@@ -43,6 +57,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -78,6 +96,10 @@
   }
 }
 
+.additional__pack {
+  margin-left: 163px;
+}
+
 .additional__price {
   @media (min-width: $tablet-width) {
     margin-left: 50px;
@@ -91,5 +113,10 @@
   @media (min-width: $tablet-width) {
     padding-left: 325px;
     padding-right: 325px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 92px;
+    padding-right: 92px;
   }
 }
