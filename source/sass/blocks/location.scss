@@ -10,6 +10,14 @@
       background-color: $white;
     }
   }
+
+  &--form {
+    background-color: $grey-100;
+
+    @media (min-width: $desktop-width) {
+      background-color: $white;
+    }
+  }
 }
 
 .location__inner {
