@@ -1,9 +1,11 @@
 .card {
   &--show-more {
     display: block;
+    border-bottom: 1px solid $grey-300;
 
     @media (min-width: $tablet-width) {
       display: grid;
+      border: none;
     }
   }
 }
@@ -108,5 +110,3 @@
   background-color: $grey-100;
   color: $grey-900;
 }
-
-// FIXME почему кнопки так себя ведут, как это можно исправить?

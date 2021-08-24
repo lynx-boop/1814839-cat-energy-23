@@ -37,10 +37,18 @@
 }
 
 .additional__item {
-  padding-bottom: 30px;
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $grey-300;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-300;
+  }
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 38px;
+    padding: 26px 38px 28px;
+    border-right: 1px solid $grey-300;
+    border-left: 1px solid $grey-300;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,6 +56,9 @@
     justify-content: space-between;
     align-items: center;
     margin: 0;
+    padding: 15px 0 17px;
+    border-right: none;
+    border-left: none;
   }
 }
 
@@ -57,13 +68,13 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 35px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
     align-items: center;
     flex-grow: 1;
+    margin-bottom: 0;
   }
 }
 
@@ -99,7 +110,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 25px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
