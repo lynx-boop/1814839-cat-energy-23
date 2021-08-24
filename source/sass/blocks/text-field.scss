@@ -21,12 +21,6 @@
       margin-bottom: 0;
     }
   }
-
-  &--contacts:not(:last-child) {
-    @media (min-width: $desktop-width) {
-      margin-bottom: 20px;
-    }
-  }
 }
 
 

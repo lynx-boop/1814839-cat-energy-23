@@ -138,3 +138,10 @@
     margin: 0;
   }
 }
+
+.form__text-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    row-gap: 20px;
+  }
+}
