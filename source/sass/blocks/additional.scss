@@ -118,5 +118,7 @@
 }
 
 .additional__button {
-  width: 244px;
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }
