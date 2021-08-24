@@ -4,19 +4,16 @@
   background-origin: content-box;
   background-position: 50% 0%;
   height: 289px;
-  margin-bottom: 35px;
 
 
   @media (min-width: $tablet-width) {
     background-color: $green-600;
     height: 200px;
     margin-bottom: 76px;
-    padding-right: 124px;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     padding: 0 41px 43px 42px;
-    width: 245px;
     height: 288px;
   }
 }
@@ -29,15 +26,7 @@
   color: $white;
   margin: 0;
 
-  @media (min-width: $tablet-width) {
-    padding-left: 422px;
-    vertical-align: middle;
-  }
-
   @media (min-width: $desktop-width) {
-    padding: 0;
-    padding-top: 184px;
-    vertical-align: bottom;
     text-align: center;
   }
 }

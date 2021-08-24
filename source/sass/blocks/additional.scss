@@ -46,6 +46,7 @@
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0;
   }
 }
@@ -61,6 +62,8 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    align-items: center;
+    flex-grow: 1;
   }
 }
 
@@ -78,6 +81,10 @@
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }
 
 .additional__subtitle {
@@ -94,29 +101,22 @@
     line-height: 20px;
     margin-bottom: 25px;
   }
-}
 
-.additional__pack {
-  margin-left: 163px;
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional__price {
   @media (min-width: $tablet-width) {
     margin-left: 50px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 38px;
+  }
 }
 
 .additional__button {
-  padding-left: 115px;
-  padding-right: 115px;
-
-  @media (min-width: $tablet-width) {
-    padding-left: 325px;
-    padding-right: 325px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-left: 92px;
-    padding-right: 92px;
-  }
+  width: 244px;
 }

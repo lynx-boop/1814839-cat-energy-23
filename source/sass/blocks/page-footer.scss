@@ -30,9 +30,9 @@
 }
 
 .page-footer__link {
-  padding: 39px 96px 32px 96px;
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  padding: 39px 0 32px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     justify-self: left;
