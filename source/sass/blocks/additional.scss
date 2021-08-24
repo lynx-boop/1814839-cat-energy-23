@@ -1,6 +1,10 @@
 .additional {
   padding-top: 25px;
   padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .additional__inner {
@@ -33,6 +37,10 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
   }
 }
 
