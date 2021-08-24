@@ -22,14 +22,13 @@
     }
   }
 
-  &--contacts {
-    &:not(:last-child) {
-      @media (min-width: $desktop-width) {
-        margin-bottom: 20px;
-      }
+  &--contacts:not(:last-child) {
+    @media (min-width: $desktop-width) {
+      margin-bottom: 20px;
     }
   }
 }
+
 
 .text-field__label {
   color: $grey-900;
