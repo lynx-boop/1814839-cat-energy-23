@@ -10,7 +10,7 @@
 .additional__inner {
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 1fr 245px;
     column-gap: 80px;
   }
 }
