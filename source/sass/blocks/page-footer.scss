@@ -30,9 +30,9 @@
 }
 
 .page-footer__link {
-  padding: 39px 96px 32px 96px;
-  justify-self: center;
-  align-self: center;
+  display: flex;
+  padding: 39px 0 32px;
+  justify-content: center;
 
   @media (min-width: $tablet-width) {
     justify-self: left;
@@ -44,8 +44,6 @@
   width: 128px;
   height: 24px;
 }
-
-// FIXME теперь изображение есть, но ни марджины, ни паддинги не работают о__О Как это исправить?
 
 .page-footer__social-list {
   display: flex;
@@ -61,6 +59,7 @@
     column-gap: 20px;
     padding: 0;
     margin: 0;
+    border: none;
   }
 
   @media (min-width: $desktop-width) {

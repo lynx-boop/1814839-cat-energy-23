@@ -1,13 +1,28 @@
 .gift {
-  display: grid;
+  display: flex;
+  align-items: flex-end;
   background-image: url("../img/index/background-cat-gift.jpg");
   background-repeat: no-repeat;
   background-origin: content-box;
   background-position: 50% 0%;
-  text-align: center;
-  min-height: 289px;
-  margin-top: 35px;
-  margin-bottom: 35px;
+  height: 289px;
+  padding: 43px 61px 43px 58px;
+
+
+  @media (min-width: $tablet-width) {
+    background-color: $green-600;
+    height: 200px;
+    padding-right: 124px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 289px;
+    padding: 43px 61px 43px 58px;
+    align-items: flex-end;
+  }
 }
 
 .gift__text {
@@ -16,6 +31,15 @@
   line-height: 20px;
   font-weight: 400;
   color: $white;
-}
+  margin: 0;
+  text-align: center;
 
-//странно ведет себя грид - у текста меняется странным образом размер и я не могу урпавлять им
+  @media (min-width: $tablet-width) {
+    width: 161px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
+}

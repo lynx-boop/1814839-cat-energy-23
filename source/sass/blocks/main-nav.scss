@@ -16,7 +16,16 @@
     font-weight: 400;
     display: flex;
     justify-content: right;
-    color: $white;
+  }
+
+  &--index {
+    @media (min-width: $desktop-width) {
+      color: $white;
+    }
+  }
+
+  &--form {
+    color: $black;
   }
 }
 
@@ -28,28 +37,17 @@
   position: relative;
   top: 4px;
 
-  &--open {
-    // .menu {
-    //   display: block;
-    // }
-    // FIXME блок не должен влиять на другой блок, пока оставить, потом разберем
-
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      width: 18px;
-      height: 18px;
-    }
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 18px;
+    height: 18px;
   }
 
   &--close {
     border-top: 2px solid $black;
     border-bottom: 2px solid $black;
-
-    .menu {
-      display: none;
-    }
 
     &::before {
       content: "";
@@ -62,7 +60,7 @@
       top: 45%;
     }
   }
-  // background-image: url("..img/logo-toggle.svg"); FIXME сделать все на css
+
   @media (min-width: $tablet-width) {
     display: none;
   }

@@ -1,0 +1,112 @@
+.card {
+  &--show-more {
+    display: block;
+    border-bottom: 1px solid $grey-300;
+
+    @media (min-width: $tablet-width) {
+      display: grid;
+      border: none;
+    }
+  }
+}
+
+.card__link {
+  justify-self: center;
+  align-self: center;
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 18px;
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  max-width: 76px;
+  color: $grey-970;
+
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto 21px;
+    max-width: 155px;
+  }
+
+  &--show-more {
+    margin: 0 auto;
+    padding: 78px 0 25px 0;
+    background-image: url("../img/index/icon-plus.svg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 25px;
+    max-width: none;
+    text-align: center;
+  }
+}
+
+.card__stats {
+  margin: 0;
+  margin-bottom: 42px;
+}
+
+.card__desc {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.card__text {
+  display: flex;
+  justify-content: space-between;
+  font-family: $default-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $grey-900;
+
+  &--show-more {
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 16px;
+  }
+
+
+  &--dt {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &--dd {
+    @media (min-width: $tablet-width) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card__button {
+  grid-column-start: 1;
+  grid-column-end: -1;
+
+  @media (min-width: $tablet-width) {
+    align-self: end;
+  }
+}
+
+.card__button--show {
+  background-color: $grey-100;
+  color: $grey-900;
+}

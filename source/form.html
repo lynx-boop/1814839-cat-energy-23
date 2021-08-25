@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
 
   <link rel="stylesheet" href="css/style.css">
@@ -11,16 +12,18 @@
 <body class="page__body">
 
   <header class="page-header wrapper">
-    <a class="page-header__logo">
+    <a class="page-header__logo page-header__logo--mobile">
       <img class="page-header__logo-image page-header__logo-image--cat" src="img/logo-cat.svg" width="34" height="38"
         alt="Кот-логотип Кэт Энерджи">
+    </a>
+    <a class="page-header__logo page-header__logo--mobile">
       <img class="page-header__logo-image page-header__logo-image--text" src="img/logo-text.svg" width="101" height="18"
         alt="Текст-логотип Кэт Энерджи">
     </a>
 
     <nav class="main-nav">
 
-      <button class="main-nav__toggle" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
@@ -46,94 +49,101 @@
 
     <form class="page-main__form form" action="https://echo.htmlacademy.ru" method="post">
 
-      <fieldset class="form__group">
-        <legend class="form__title visually-hidden">Контактные данные</legend>
-        <p class="form__field text-field">
-          <label class="text-field__label uppercase" for="name">
-            Имя:
-            <sup>*</sup>
-          </label>
-          <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
-        </p>
+      <div class="form__container">
+        <fieldset class="form__group form__group--contacts">
+          <legend class="form__title visually-hidden">Контактные данные</legend>
 
-        <p class="form__field text-field">
-          <label class="text-field__label uppercase" for="weight">
-            Вес (кг):
-            <sup>*</sup>
-          </label>
-          <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
-        </p>
+          <div class="form__text-container">
+            <p class="form__field text-field">
+              <label class="text-field__label uppercase" for="name">
+                Имя:
+                <sup>*</sup>
+              </label>
+              <input class="text-field__input uppercase" id="name" type="text" name="name" placeholder="Барсик" />
+            </p>
 
-        <p class="form__field text-field uppercase">
-          <label class="text-field__label" for="age">Возраст (лет):</label>
-          <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
-        </p>
-      </fieldset>
+            <p class="form__field text-field">
+              <label class="text-field__label uppercase" for="weight">
+                Вес (кг):
+                <sup>*</sup>
+              </label>
+              <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
+            </p>
 
-      <fieldset class="form__group form__group--options">
-        <legend class="form__title visually-hidden">Выбор опции</legend>
-        <ul class="form__list list-reset">
+            <p class="form__field text-field">
+              <label class="text-field__label uppercase" for="age">Возраст (лет):</label>
+              <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
+            </p>
+          </div>
+        </fieldset>
 
-          <li class="form__item radio-input">
-            <label class="radio-input__label">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="slimming" checked>
-              <span class="uppercase">Похудение</span>
-            </label>
-          </li>
+        <fieldset class="form__group form__group--options">
+          <legend class="form__title visually-hidden">Выбор опции</legend>
+          <ul class="form__list form__list--radio list-reset">
 
-          <li class="form__item radio-input">
-            <label class="radio-input__labelt">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="weight gain">
-              <span class="uppercase">Набор массы</span>
-            </label>
-          </li>
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="slimming" checked>
+                <span class="uppercase">Похудение</span>
+              </label>
+            </li>
 
-          <li class="form__item radio-input">
-            <label class="radio-input__label">
-              <input class="radio-input__input visually-hidden" type="radio" name="option" value="dont know">
-              <span class="uppercase">Не знаю (нужен ваш совет)</span>
-            </label>
-          </li>
-        </ul>
-      </fieldset>
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="weight gain">
+                <span class="uppercase">Набор массы</span>
+              </label>
+            </li>
+
+            <li class="form__item radio-input">
+              <label class="radio-input__label">
+                <input class="radio-input__input visually-hidden" type="radio" name="option" value="dont know">
+                <span class="uppercase">Не знаю (нужен ваш совет)</span>
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
 
       <fieldset class="form__group form__group--contacts">
         <legend class="form__title">Контактные данные (владельца кота)</legend>
 
-        <p class="form__field text-field">
-          <label class="form__label uppercase" for="e-mail">
-            E-mail:
-            <sup>*</sup>
-          </label>
-          <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
-            placeholder="kuklachev@gmail.com" />
-        </p>
+        <div class="form__container">
+          <p class="form__field text-field">
+            <label class="form__label uppercase" for="e-mail">
+              E-mail:
+              <sup>*</sup>
+            </label>
+            <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
+              placeholder="kuklachev@gmail.com" />
+          </p>
 
-        <p class="form__field text-field">
-          <label class="form__label uppercase" for="tel">
-            Телефон:
-            <sup>*</sup>
-          </label>
-          <input class="form__input uppercase text-field__input" id="tel" type="tel" name="tel"
-            placeholder="8 (960) 900-60-90" />
-        </p>
+          <p class="form__field text-field">
+            <label class="form__label uppercase" for="tel">
+              Телефон:
+              <sup>*</sup>
+            </label>
+            <input class="form__input uppercase text-field__input" id="tel" type="tel" name="tel"
+              placeholder="8 (960) 900-60-90" />
+          </p>
+        </div>
       </fieldset>
 
-      <fildset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
         <legend class="form__title">Комментарий</legend>
         <label class="form__label">
-          <textarea class="form__textarea uppercase text-field__input" name="comment" id="comment"
+          <textarea class="form__textarea uppercase" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </label>
-      </fildset>
+      </fieldset>
 
       <fieldset class="form__group form__group--add-options">
         <legend class="form__title">Дополнительно</legend>
-        <ul class="form__list list-reset">
+        <ul class="form__list form__list--add-options list-reset">
 
           <li class="form__item checkbox">
-            <label class="form__label">
-              <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>
+            <label class="checkbox__label">
+              <input class="checkbox__input visually-hidden" type="checkbox" name="sweetener" checked>
               <span class="uppercase">Сахарозаменитель</span>
             </label>
           </li>
@@ -161,11 +171,14 @@
         </ul>
 
       </fieldset>
-      <button class="form__button button uppercase" type="submit">Отправить заявку</button>
-      <p class="form__note">
-        <sup>*</sup>
-        — Обязательные поля
-      </p>
+
+      <div class="form__inner">
+        <button class="form__button button uppercase" type="submit">Отправить заявку</button>
+        <p class="form__note">
+          <sup>*</sup>
+          — Обязательные поля
+        </p>
+      </div>
 
     </form>
   </main>
@@ -173,23 +186,27 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Контакты</h2>
 
-    <section class="page-footer__location location">
-      <div class="location__cooperation--container wrapper">
-        <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
-        <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+    <section class="page-footer__location location location--form">
+      <div class="wrapper">
+        <div class="location__inner">
+          <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
+          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        </div>
       </div>
 
       <div class="location__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.594445916085!2d30.32048746686707!3d59.93833828942867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1627049887967!5m2!1sru!2sru"
-          width="100%" height="100%" allowfullscreen="" loading="lazy"></iframe>
+          allowfullscreen="" loading="lazy"></iframe>
         <img class="location__pin" src="img/map-pin.png" width="57" height="53" alt="Маркер местоположения">
       </div>
     </section>
 
     <section class="page-footer__contact-us wrapper">
-      <img class="page-footer__text-logo" src="img/logo-text.svg" width="128" height="24"
-        alt="Текст-логотип Кэт Энерджи">
+      <a class="page-footer__link" href="">
+        <img class="page-footer__text-logo" src="img/logo-text.svg" width="128" height="24"
+          alt="Текст-логотип Кэт Энерджи">
+      </a>
 
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
@@ -217,6 +234,9 @@
       </div>
     </section>
   </footer>
+
+  <script src="main-nav.js"></script>
+
 </body>
 
 </html>

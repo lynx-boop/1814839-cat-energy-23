@@ -1,18 +1,143 @@
+.additional {
+  padding-top: 25px;
+  padding-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+}
+
+.additional__inner {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 245px;
+    column-gap: 80px;
+  }
+}
+
 .additional__title {
+  margin: 0;
+  margin-bottom: 36px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 80px;
+  }
 }
 
 .additional__list {
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 69px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.additional__item {
+  padding-top: 13px;
+  padding-bottom: 19px;
+  border-top: 1px solid $grey-300;
+
+  &:last-child {
+    border-bottom: 1px solid $grey-300;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 26px 38px 28px;
+    border-right: 1px solid $grey-300;
+    border-left: 1px solid $grey-300;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 15px 0 17px;
+    border-right: none;
+    border-left: none;
+  }
+}
+
+.additional__description {
+  margin-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    align-items: center;
+    flex-grow: 1;
+    margin-bottom: 0;
+  }
+}
+
+.additional__stats {
+  font-family: $default-font;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: $grey-900;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+  }
 }
 
 .additional__subtitle {
-  font-size: 16px;
-  line-height: 18px;
-  font-weight: 400;
   font-family: $custom-font;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $grey-970;
+  margin: 0;
+  margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
+}
+
+.additional__price {
+  @media (min-width: $tablet-width) {
+    margin-left: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 38px;
+  }
+}
+
+.additional__button {
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
 }

@@ -1,20 +1,86 @@
-.form {
-  display: grid;
-}
-
-.form__field {
-  display: flex;
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 80px;
+    margin-bottom: 69px;
+  }
 }
 
 .form__group {
-  display: grid;
   border: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 27px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 71px;
+    margin-bottom: 0;
+  }
+
+  &--contacts {
+    @media (min-width: $desktop-width) {
+      padding: 0;
+    }
+  }
+
+  &--options {
+    border-top: 1px solid $grey-100;
+    border-bottom: 1px solid $grey-100;
+    padding-top: 26px;
+    padding-bottom: 26px;
+
+    @media (min-width: $tablet-width) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      margin-bottom: 71px;
+      border: 1px solid $grey-100;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 0;
+      margin: 0;
+      align-self: center;
+    }
+  }
+}
+
+.form__list {
+  &--radio {
+    @media (min-width: $desktop-width) {
+      display: block;
+      padding: 10px 0;
+      border: 1px solid $grey-210;
+    }
+  }
+
+  &--add-options {
+    @media (min-width: $tablet-width) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 42px 60px;
+      border: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 80px;
+    }
+  }
 }
 
 .form__title {
   font-size: 24px;
   line-height: 26px;
   font-weight: 400;
+  margin: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .form__note {
@@ -22,17 +88,60 @@
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 61px;
+  }
 }
 
-.form__label {
+.form__textarea {
+  width: 100%;
+  height: 150px;
+  margin: 0;
+  padding: 9px 15px;
+  flex-grow: 1;
+  border: 1px solid $grey-210;
+  font-family: $custom-font;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
   color: $grey-900;
+
+  &::placeholder {
+    text-align: center;
+
+    @media (min-width: $tablet-width) {
+      font-size: 20px;
+      line-height: 30px;
+      text-align: left;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    height: 174px;
+  }
 }
 
-.form__input::placeholder,
-.form__textarea::placeholder {
-  color: $grey-900;
+.form__inner {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
 }
 
-.form__textarea::placeholder {
-  text-align: center;
+.form__button {
+  margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.form__text-container {
+  @media (min-width: $desktop-width) {
+    display: grid;
+    row-gap: 20px;
+  }
 }
