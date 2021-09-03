@@ -9,16 +9,19 @@
     height: 302px;
     background-image: url("../img/index/background-cat-mobile.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: center;
   }
   text-align: center;
   padding-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+    text-align: left;
+
     &::before {
       background-image: none;
     }
-    padding-bottom: 0;
-    text-align: left;
   }
 
   @media (min-width: $desktop-width) {
@@ -34,10 +37,11 @@
       right: 0;
       z-index: -1;
       display: block;
-      width: 720px;
+      width: 50%;
       height: 694px;
       background-image: url("../img/index/background-cat-desktop.jpg");
       background-repeat: no-repeat;
+      background-size: cover;
     }
   }
 }

@@ -55,6 +55,9 @@
   position: relative;
   margin: 0;
   padding-left: 80px;
+  height: 60px;
+  vertical-align: center;
+  // FIXME почему не применяется это свойство выше?
 
   &:not(:first-child) {
     margin-top: 24px;
