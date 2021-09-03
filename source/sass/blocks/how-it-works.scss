@@ -45,9 +45,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    // repeat почему-то не сработал
     column-gap: 80px;
-    justify-content: space-between;
   }
 }
 
