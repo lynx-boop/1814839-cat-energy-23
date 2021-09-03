@@ -15,6 +15,7 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     display: flex;
