@@ -1,13 +1,12 @@
 .page {
-  margin: 0;
-  padding: 0;
   height: 100%;
 }
 
 .page__body {
   display: grid;
-  grid-template-areas: "page-header" "page-main" "page-footer";
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: min-content 1fr min-content;
+  margin: 0;
+  align-content: start;
   font-family: $custom-font;
   font-size: 14px;
   line-height: 18px;
