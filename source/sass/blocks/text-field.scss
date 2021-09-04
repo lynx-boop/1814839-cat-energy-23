@@ -45,6 +45,7 @@
   color: $grey-900;
   margin-left: 10px;
 
+  //FIXME не знаю, как сделать так, чтобы бордеры у инпутов менялись(
   &::placeholder {
     color: $grey-900;
   }

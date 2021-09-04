@@ -49,6 +49,7 @@
 }
 
 .main-nav__toggle {
+  cursor: pointer;
   border: none;
   background-color: transparent;
   width: 24px;
@@ -78,14 +79,23 @@
   }
 
   &--open {
-    &::before {
+    &::before,
+    &::after {
       content: "";
-      background-image: url("../img/icon-close.svg");
-      background-repeat: no-repeat;
-      width: 20px;
-      height: 20px;
-      top: -2px;
+      position: absolute;
+      top: 8px;
       left: 0;
+      width: 24px;
+      height: 2px;
+      background-color: $black;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+
+    &::after {
+      transform: rotate(-45deg);
     }
   }
 
