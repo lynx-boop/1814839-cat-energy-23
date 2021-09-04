@@ -76,6 +76,7 @@
 }
 
 .programs__catalog {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
 
@@ -92,4 +93,12 @@
   position: relative;
   top: 0;
   left: 0;
+}
+
+.programs__arrow {
+  position: absolute;
+  top: 8px;
+  left: 99px;
+  width: 26px;
+  height: 10px;
 }

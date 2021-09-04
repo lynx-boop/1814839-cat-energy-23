@@ -7,8 +7,10 @@
 }
 
 .menu__item {
-  padding: 22px 0 24px 0;
-  border-top: 1px solid $grey-210;
+  @media (max-width: $tablet-width) {
+    padding: 22px 20px 24px;
+    border-top: 1px solid $grey-210;
+  }
 
   &:last-child {
     border-bottom: 1px solid $grey-210;
