@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -74,5 +75,10 @@
     top: 68px;
     left: 10px;
     width: 142px;
+    background-color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-200;
   }
 }

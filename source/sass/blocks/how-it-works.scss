@@ -25,6 +25,7 @@
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
+    margin-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
@@ -75,6 +76,7 @@
     line-height: 24px;
     font-weight: 400;
     height: 227px;
+    width: 249px;
   }
 
   &::before {
@@ -93,20 +95,65 @@
       height: 80px;
     }
   }
+
+  &::after {
+    font-family: $custom-font;
+    font-size: 280px;
+    z-index: -1;
+    color: $grey-110;
+    position: absolute;
+    height: 227px;
+    top: 90px;
+    right: 0;
+  }
 }
 
-.how-it-works__item--leaf::before {
-  background-image: url("../img/index/icon-leaf.svg");
+.how-it-works__item--leaf {
+  &::before {
+    background-image: url("../img/index/icon-leaf.svg");
+  }
+
+  // FIXME почему-то свойства для афтера работают странно - область, в которой находится афтер
+  // не совпадает с областью, в которой находится цифра(( Почему так?
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "1";
+    }
+  }
 }
 
-.how-it-works__item--boil::before {
-  background-image: url("../img/index/icon-boil.svg");
+.how-it-works__item--boil {
+  &::before {
+    background-image: url("../img/index/icon-boil.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "2";
+    }
+  }
 }
 
-.how-it-works__item--cutlery::before {
-  background-image: url("../img/index/icon-cutlery.svg");
+.how-it-works__item--cutlery {
+  &::before {
+    background-image: url("../img/index/icon-cutlery.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "3";
+    }
+  }
 }
 
-.how-it-works__item--scales::before {
-  background-image: url("../img/index/icon-scales.svg");
+.how-it-works__item--scales {
+  &::before {
+    background-image: url("../img/index/icon-scales.svg");
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      content: "4";
+    }
+  }
 }
