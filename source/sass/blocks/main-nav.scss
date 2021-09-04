@@ -1,21 +1,40 @@
 .main-nav__list {
-  display: none;
+  position: relative;
+
+  &--close {
+    display: none;
+  }
+
+  &--open {
+    display: block;
+    text-align: center;
+    background-color: $white;
+    font-size: 20px;
+    line-height: 20px;
+    width: 100%;
+    position: absolute;
+    top: 80px;
+    left: 0;
+  }
 
   @media (min-width: $tablet-width) {
+    position: relative;
+    top: 5px;
+    display: flex;
+    justify-content: right;
     font-size: 18px;
     line-height: 24px;
     font-weight: 400;
-    display: flex;
-    justify-content: right;
     color: $black;
+    background-color: transparent;
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: right;
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
-    display: flex;
-    justify-content: right;
   }
 
   &--index {
@@ -50,14 +69,23 @@
     border-bottom: 2px solid $black;
 
     &::before {
-      content: "";
-      position: absolute;
-      display: block;
       width: 24px;
       height: 2px;
       background-color: $black;
       left: 0;
       top: 45%;
+    }
+  }
+
+  &--open {
+    &::before {
+      content: "";
+      background-image: url("../img/icon-close.svg");
+      background-repeat: no-repeat;
+      width: 20px;
+      height: 20px;
+      top: -2px;
+      left: 0;
     }
   }
 
