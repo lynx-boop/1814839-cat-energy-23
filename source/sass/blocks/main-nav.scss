@@ -1,5 +1,6 @@
 .main-nav__list {
   position: relative;
+  z-index: 1;
 
   &--close {
     display: none;

@@ -24,6 +24,7 @@
 }
 
 .stats__p {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -36,23 +37,42 @@
   line-height: 24px;
   font-family: $custom-font;
   margin: 0;
+  width: 124px;
+  height: 64px;
+  padding-top: 15px;
+  border: 1px solid $grey-400;
+  border-radius: 3px;
 
   @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .stats__min {
+  position: absolute;
+  background-color: $grey-200;
+  color: $grey-800;
   text-align: center;
   font-family: $default-font;
   font-size: 12px;
   line-height: 12px;
   justify-self: center;
   margin: 0;
+  top: 55px;
+  left: 20px;
+  width: 87px;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
     font-size: 14px;
     line-height: 14px;
+    top: 68px;
+    left: 10px;
+    width: 142px;
   }
 }

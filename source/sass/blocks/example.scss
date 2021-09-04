@@ -49,6 +49,17 @@
     line-height: 29px;
     text-align: right;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    justify-self: left;
+  }
+}
+
+.example__span {
+  @media (min-width: $desktop-width) {
+    margin-left: 63px;
+  }
 }
 
 .example__button {
