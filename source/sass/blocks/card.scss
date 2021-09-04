@@ -110,4 +110,12 @@
 .card__button--show {
   background-color: $grey-100;
   color: $grey-900;
+
+  &:hover {
+    background-color: $grey-220;
+  }
+
+  &:active {
+    color: $grey-900-transparent;
+  }
 }

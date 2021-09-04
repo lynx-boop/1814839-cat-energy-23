@@ -9,3 +9,13 @@
 .menu__item:not(:last-child) {
   margin-right: 34px;
 }
+
+.menu__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

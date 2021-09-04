@@ -78,6 +78,10 @@
 .programs__catalog {
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    color: $black-transparent;
+  }
 }
 
 .programs__catalog::after {
