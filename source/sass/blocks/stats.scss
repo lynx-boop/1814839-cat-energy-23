@@ -42,7 +42,7 @@
   height: 64px;
   padding-top: 15px;
   border: 1px solid $grey-400;
-  border-radius: 3px;
+  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
@@ -63,8 +63,8 @@
   justify-self: center;
   margin: 0;
   top: 55px;
-  left: 20px;
   width: 87px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
     br {
@@ -73,9 +73,9 @@
     font-size: 14px;
     line-height: 14px;
     top: 68px;
-    left: 10px;
-    width: 142px;
+    width: max-content;
     background-color: $white;
+    padding: 0 10px;
   }
 
   @media (min-width: $desktop-width) {
