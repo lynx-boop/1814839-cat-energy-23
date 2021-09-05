@@ -55,7 +55,9 @@
     background-size: 18px 14px;
   }
 
-  &::before {
-    background-size: 24px 19px;
+  @media (min-width: $tablet-width) {
+    &::before {
+      background-size: 24px 19px;
+    }
   }
 }
