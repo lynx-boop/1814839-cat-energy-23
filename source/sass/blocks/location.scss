@@ -86,6 +86,7 @@
 }
 
 .location__map {
+  position: relative;
   height: 362px;
 
   @media (min-width: $tablet-width) {
@@ -100,5 +101,14 @@
 }
 
 .location__pin {
-  display: none;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 132px;
+  left: 0;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    top: 152px;
+  }
 }

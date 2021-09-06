@@ -54,6 +54,10 @@
 .card__stats {
   margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .card__desc {
@@ -70,27 +74,12 @@
   line-height: 16px;
   color: $grey-900;
 
-  &--show-more {
-    br {
-      display: none;
-    }
-    margin: 0;
-    justify-content: center;
-    margin-bottom: 21px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 67px;
-      text-align: center;
-
-      br {
-        display: block;
-      }
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-bottom: 16px;
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid $grey-400;
   }
 
 
@@ -103,6 +92,25 @@
   &--dd {
     @media (min-width: $tablet-width) {
       margin-bottom: 0;
+    }
+  }
+
+  &--show-more {
+    br {
+      display: none;
+    }
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+      text-align: center;
+      border: none;
+
+      br {
+        display: block;
+      }
     }
   }
 

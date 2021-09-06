@@ -45,6 +45,7 @@
 }
 
 .gift__text {
+  position: relative;
   font-family: $default-font;
   font-size: 16px;
   line-height: 20px;
@@ -61,4 +62,12 @@
   @media (min-width: $desktop-width) {
     text-align: center;
   }
+}
+
+.gift__image {
+  position: absolute;
+  display: block;
+  top: 59px;
+  left: 35%;
+  // FIXME как сделать так, чтобы картинка не уплывала при растяжении экрана?
 }

@@ -14,7 +14,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: repeat(4, 1fr);
-    gap: 63px 80px;
+    gap: 144px 80px;
   }
 }
 
@@ -27,7 +27,6 @@
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
-    grid-template-rows: 160px;
     padding: 36px 38px 38px 38px;
     border: none;
 
@@ -43,5 +42,9 @@
         left: 0;
       }
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-rows: 144px;
   }
 }
