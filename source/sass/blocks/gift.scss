@@ -66,8 +66,13 @@
 
 .gift__image {
   position: absolute;
-  display: block;
+  margin-left: auto;
+  margin-right: auto;
   top: 59px;
-  left: 35%;
-  // FIXME как сделать так, чтобы картинка не уплывала при растяжении экрана?
+  left: 0;
+  right: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 77px;
+  }
 }
