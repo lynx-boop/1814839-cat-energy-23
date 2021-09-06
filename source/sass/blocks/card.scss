@@ -5,7 +5,7 @@
 
     @media (min-width: $tablet-width) {
       display: grid;
-      border: none;
+      border: 1px solid $grey-300;
     }
   }
 }
@@ -35,14 +35,19 @@
   }
 
   &--show-more {
+    br {
+      display: none;
+    }
     margin: 0 auto;
-    padding: 78px 0 25px 0;
-    background-image: url("../img/index/icon-plus.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 25px;
+    padding-bottom: 25px;
     max-width: none;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
   }
 }
 
@@ -66,12 +71,20 @@
   color: $grey-900;
 
   &--show-more {
+    br {
+      display: none;
+    }
     margin: 0;
     justify-content: center;
     margin-bottom: 21px;
 
     @media (min-width: $tablet-width) {
       margin-bottom: 67px;
+      text-align: center;
+
+      br {
+        display: block;
+      }
     }
   }
 
@@ -98,6 +111,10 @@
   }
 }
 
+.card__text-container {
+  margin-bottom: 21px;
+}
+
 .card__button {
   grid-column-start: 1;
   grid-column-end: -1;
@@ -117,5 +134,37 @@
 
   &:active {
     color: $grey-900-transparent;
+  }
+}
+
+.card__bg-image {
+  height: 78px;
+  background-image: url("../img/index/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 25px;
+
+  @media (min-width: $tablet-width) {
+    // FIXME попробовала сделать плюсик чисто на css, но он при растяжении начинает "плавать"
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $grey-310;
+    //     width: 60px;
+    //     height: 2px;
+    //     top: 50%;
+    //     left: 40%;
+    //   }
+
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $grey-310;
+    //     width: 2px;
+    //     height: 60px;
+    //     top: 31%;
+    //     left: 50%;
+    //   }
+    // }
   }
 }
