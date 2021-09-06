@@ -9,4 +9,12 @@
   font-size: 16px;
   line-height: 20px;
   width: 100%;
+
+  &:hover {
+    background-color: $green-700;
+  }
+
+  &:active {
+    color: $white-transparent;
+  }
 }

@@ -7,6 +7,11 @@
   <title>HTML Academy: Кэт энерджи</title>
 
   <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" href="../favicon.ico">
+  <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+  <link rel="manifest" href="manifest.webmanifest">
 </head>
 
 <body class="page__body">
@@ -27,20 +32,21 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list menu list-reset">
+      <ul class="main-nav__list main-nav__list--close menu list-reset">
         <li class="menu__item">
           <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
         <li class="menu__item">
           <a href="catalog.html" class="menu__link uppercase">Каталог продукции</a>
         </li>
-        <li class="menu__item">
+        <li class="menu__item active">
           <a href="form.html" class="menu__link uppercase">Подбор программы</a>
         </li>
       </ul>
 
     </nav>
   </header>
+
 
   <main class="page-main wrapper">
     <h1 class="page-main__main-title page-main__main-title--form">Подбор программы</h1>
@@ -106,7 +112,8 @@
       </div>
 
       <fieldset class="form__group form__group--contacts">
-        <legend class="form__title">Контактные данные (владельца кота)</legend>
+        <legend class="form__title">Контактные данные<br>
+          (владельца кота)</legend>
 
         <div class="form__container">
           <p class="form__field text-field">
@@ -116,6 +123,17 @@
             </label>
             <input class="form__input uppercase text-field__input" id="e-mail" type="e-mail" name="e-mail"
               placeholder="kuklachev@gmail.com" />
+            <svg class="form__icon" width="19" height="14" viewbox="0 0 19 14" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <line x1="0.65" y1="5.84766" x2="0.65" y2="13.8477" stroke="#222222" stroke-width="1.3" />
+              <line x1="17.65" y1="5.84766" x2="17.65" y2="13.8477" stroke="#222222" stroke-width="1.3" />
+              <line y1="13.1977" x2="18" y2="13.1977" stroke="#222222" stroke-width="1.3" />
+              <line y1="1.19766" x2="18" y2="1.19766" stroke="#222222" stroke-width="1.3" />
+              <path d="M17.35 3.02975L9.00002 9.5242L0.65 3.02975V1.49766H3.5L9.00002 1.49766H14H17.35V3.02975Z"
+                stroke="#222222" stroke-width="1.3" />
+            </svg>
+            <!-- FIXME как выставить этот свг в конец внутри инпута? Не могу понять( -->
+
           </p>
 
           <p class="form__field text-field">
@@ -187,7 +205,9 @@
     <h2 class="visually-hidden">Контакты</h2>
 
     <section class="page-footer__location location location--form">
-      <div class="wrapper">
+
+      <div class="location__wrapper wrapper">
+
         <div class="location__inner">
           <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>

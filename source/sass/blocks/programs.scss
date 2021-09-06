@@ -15,9 +15,72 @@
 }
 
 .programs__item {
+  position: relative;
   background-color: $grey-100;
   padding: 20px;
   padding-top: 30px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-repeat: no-repeat;
+  }
+
+  &--slim::before {
+    width: 50px;
+    height: 53px;
+    background-image: url("../img/index/cat-slim.svg");
+    top: 21px;
+    left: 22px;
+  }
+
+  &--pro::before {
+    width: 67px;
+    height: 50px;
+    background-image: url("../img/index/cat-pro.svg");
+    top: 24px;
+    left: 13px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 77px 52px 57px;
+
+    &--slim::before {
+      background-size: cover;
+      width: 200px;
+      height: 200px;
+      left: auto;
+      top: 92px;
+      right: 62px;
+    }
+
+    &--pro::before {
+      background-size: cover;
+      width: 268px;
+      height: 200px;
+      left: auto;
+      top: 92px;
+      right: 28px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &--slim::before {
+      background-size: cover;
+      width: 100px;
+      height: 106px;
+      left: 52px;
+      top: 41px;
+    }
+
+    &--pro::before {
+      background-size: cover;
+      width: 134px;
+      height: 100px;
+      left: 33px;
+      top: 47px;
+    }
+  }
 }
 
 .programs__title {
@@ -35,31 +98,14 @@
     line-height: 36px;
     font-weight: 400;
     padding: 0;
+    margin-bottom: 24px;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
+  @media (min-width: $desktop-width) {
+    text-align: center;
+    margin-bottom: 73px;
   }
 }
-
-
-// .programs__item--slim .programs__title::before {
-//   background-image: url("../img/index/cat-slim.svg");
-//   width: 50px;
-//   height: 53px;
-// }
-
-// .programs__item--pro .programs__title::before {
-//   background-image: url("../img/index/cat-pro.svg");
-//   background-repeat: no-repeat;
-//   width: 67px;
-//   height: 50px;
-// }
-
-//получилось после того, как родителю прописали relative, псевдоэлементу absolut можно сделать так и остальные элементы
 
 .programs__text {
   font-family: $default-font;
@@ -72,12 +118,26 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 48px;
+    padding-right: 316px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    margin-bottom: 25px;
   }
 }
 
 .programs__catalog {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
+
+  &:active {
+    color: $black-transparent;
+  }
 }
 
 .programs__catalog::after {
@@ -88,4 +148,12 @@
   position: relative;
   top: 0;
   left: 0;
+}
+
+.programs__arrow {
+  position: absolute;
+  top: 8px;
+  left: 99px;
+  width: 26px;
+  height: 10px;
 }

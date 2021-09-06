@@ -5,6 +5,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 0;
   }
 
   @media (min-width: $desktop-width) {
@@ -15,6 +16,7 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -23,6 +25,7 @@
 }
 
 .stats__p {
+  position: relative;
   display: flex;
   flex-direction: column;
   row-gap: 16px;
@@ -35,23 +38,47 @@
   line-height: 24px;
   font-family: $custom-font;
   margin: 0;
+  width: 124px;
+  height: 64px;
+  padding-top: 15px;
+  border: 1px solid $grey-400;
+  border-radius: 5px;
 
   @media (min-width: $tablet-width) {
+    width: 162px;
+    height: 77px;
     font-size: 30px;
     line-height: 37px;
   }
 }
 
 .stats__min {
+  position: absolute;
+  background-color: $grey-200;
+  color: $grey-800;
   text-align: center;
   font-family: $default-font;
   font-size: 12px;
   line-height: 12px;
   justify-self: center;
   margin: 0;
+  top: 55px;
+  width: 87px;
+  align-self: center;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
     font-size: 14px;
     line-height: 14px;
+    top: 68px;
+    width: max-content;
+    background-color: $white;
+    padding: 0 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-color: $grey-200;
   }
 }

@@ -8,7 +8,7 @@
 }
 
 .radio-input__label {
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
   }
@@ -16,4 +16,52 @@
 
 .radio-input__input {
   margin-bottom: 19px;
+}
+
+.radio-input__input + span {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    border: 1px solid $grey-400;
+    border-radius: 50%;
+    position: absolute;
+    top: -3px;
+    left: -45px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::before {
+      width: 40px;
+      height: 40px;
+      top: -5px;
+      left: -60px;
+    }
+  }
+}
+
+.radio-input__input:checked + span {
+  position: relative;
+
+  &::after {
+    content: "";
+    background-color: $green-600;
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    top: 5px;
+    left: -37px;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      width: 18px;
+      height: 18px;
+      top: 6px;
+      left: -49px;
+    }
+  }
 }

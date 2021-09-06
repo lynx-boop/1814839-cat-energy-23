@@ -6,6 +6,41 @@
   color: $black;
 }
 
-.menu__item:not(:last-child) {
-  margin-right: 34px;
+.menu__item {
+  @media (max-width: $tablet-width) {
+    padding: 22px 20px 24px;
+    border-top: 1px solid $grey-210;
+  }
+
+  &:last-child {
+    border-bottom: 1px solid $grey-210;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    border-top: none;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+
+  &:not(:last-child) {
+    margin: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 34px;
+    }
+  }
+}
+
+.menu__link {
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
