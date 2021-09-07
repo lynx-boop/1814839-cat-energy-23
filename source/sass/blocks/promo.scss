@@ -18,6 +18,7 @@
   @media (min-width: $tablet-width) {
     padding-bottom: 0;
     text-align: left;
+    height: 810px;
 
     &::before {
       background-image: none;
@@ -63,7 +64,6 @@
     background-color: transparent;
     text-align: left;
     margin-bottom: 40px;
-    padding-left: 119px;
   }
 
   @media (min-width: $desktop-width) {
@@ -86,7 +86,6 @@
     color: $black;
     background-color: transparent;
     text-align: left;
-    padding-left: 119px;
   }
 
   @media (min-width: $desktop-width) {
@@ -97,6 +96,8 @@
 
 .promo__image {
   @media (min-width: $tablet-width) {
+    position: absolute;
+    z-index: -1;
     width: 709px;
     height: 609px;
     // это временное решение, чтобы потом заменить эту картинку на картинку бОльшего размера
@@ -116,10 +117,9 @@
   @media (min-width: $tablet-width) {
     align-self: left;
     padding: 14px 26px;
-    position: absolute;
+    font-size: 20px;
+    line-height: 20px;
     width: auto;
-    top: 240px;
-    left: 150px;
   }
 
   @media (min-width: $desktop-width) {
@@ -131,4 +131,12 @@
 
 .promo__wrapper {
   position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 119px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-left: 0;
+  }
 }

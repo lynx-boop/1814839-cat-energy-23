@@ -138,16 +138,13 @@
   &:active {
     color: $black-transparent;
   }
-}
 
-.programs__catalog::after {
-  content: "";
-  background-image: url("../img/index/arrow.svg");
-  width: 20px;
-  height: 10px;
-  position: relative;
-  top: 0;
-  left: 0;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    top: 3px;
+    left: 0;
+  }
 }
 
 .programs__arrow {
@@ -156,4 +153,9 @@
   left: 99px;
   width: 26px;
   height: 10px;
+
+  @media (min-width: $tablet-width) {
+    top: 10px;
+    left: 130px;
+  }
 }
