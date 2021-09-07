@@ -10,11 +10,6 @@
   }
 }
 
-.card__link {
-  justify-self: center;
-  align-self: center;
-}
-
 .card__title {
   margin: 0;
   margin-bottom: 18px;
@@ -48,6 +43,13 @@
         display: block;
       }
     }
+  }
+}
+
+.card__link {
+  @media (min-width: $tablet-width) {
+    margin-top: -73px;
+    margin-bottom: 34px;
   }
 }
 

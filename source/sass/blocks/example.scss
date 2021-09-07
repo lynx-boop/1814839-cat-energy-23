@@ -9,10 +9,12 @@
     padding-top: 56px;
     padding-bottom: 64px;
     background-image: linear-gradient(to bottom, $white 65%, $grey-200 65%);
+    border-top: 1px solid $grey-210;
   }
 
   @media (min-width: $desktop-width) {
     padding-bottom: 75px;
+    border-top: 0;
     background-image: linear-gradient(to bottom, $white 30%, $grey-200 30%);
   }
 }
@@ -81,7 +83,11 @@
 }
 
 .example__slider {
-  align-self: flex-end;
+  text-align: center;
+}
+
+.example__preview {
+  justify-self: center;
 }
 
 .example__inner {
@@ -159,4 +165,13 @@
   line-height: 20px;
   border: none;
   background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.example__button-span {
+  border-bottom: 1px dotted $grey-400;
 }
