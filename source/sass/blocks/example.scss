@@ -30,6 +30,73 @@
   }
 }
 
+.example__controls {
+  display: flex;
+  justify-content: center;
+}
+
+.example__bar {
+  position: relative;
+  margin: 0 13px;
+  width: 84px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    border: 1px solid $grey-400;
+    border-radius: 10px;
+    background-color: $white;
+    top: 4px;
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 10px;
+    background-color: $green-600;
+    top: 8px;
+    left: 5px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 428px;
+    margin: 0 20px;
+
+    &::before {
+      width: 428px;
+      height: 6px;
+      border: none;
+      background-color: $grey-320;
+      top: 8px;
+      left: 0;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      border: 13px solid $white;
+      border-radius: 50%;
+      background-color: $green-600;
+      box-shadow:
+        0 3px 5px $grey-400,
+        0 0 0 1px $grey-400;
+      top: -5px;
+      left: 45%;
+    }
+  }
+}
+
+.example__slider {
+  align-self: flex-end;
+}
+
 .example__inner {
   @media (min-width: $desktop-width) {
     display: grid;
