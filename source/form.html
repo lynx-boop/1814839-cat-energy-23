@@ -73,12 +73,12 @@
                 Вес (кг):
                 <sup>*</sup>
               </label>
-              <input class="text-field__input" id="weight" type="text" name="weight" placeholder="7" />
+              <input class="text-field__input uppercase" id="weight" type="text" name="weight" placeholder="7" />
             </p>
 
             <p class="form__field text-field">
               <label class="text-field__label uppercase" for="age">Возраст (лет):</label>
-              <input class="text-field__input" id="age" type="text" name="age" placeholder="7" />
+              <input class="text-field__input uppercase" id="age" type="text" name="age" placeholder="7" />
             </p>
           </div>
         </fieldset>
@@ -204,10 +204,8 @@
   <footer class="page-footer">
     <h2 class="visually-hidden">Контакты</h2>
 
-    <section class="page-footer__location location location--form">
-
+    <section class="page-footer__location location">
       <div class="location__wrapper wrapper">
-
         <div class="location__inner">
           <h2 class="location__cooperation uppercase">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
@@ -230,24 +228,26 @@
 
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
           </a>
         </li>
       </ul>
 
       <div class="page-footer__partner partner">
-        <p class="partner__text">HTML Academy</p>
+        <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="partner__text">HTML Academy</p>
+        </a>
         <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="partner__img" src="img/logo-html.svg" width="27" height="34" alt="Лого HTML Academy">
         </a>

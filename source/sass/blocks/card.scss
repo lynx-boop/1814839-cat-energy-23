@@ -5,14 +5,9 @@
 
     @media (min-width: $tablet-width) {
       display: grid;
-      border: none;
+      border: 1px solid $grey-300;
     }
   }
-}
-
-.card__link {
-  justify-self: center;
-  align-self: center;
 }
 
 .card__title {
@@ -35,20 +30,36 @@
   }
 
   &--show-more {
+    br {
+      display: none;
+    }
     margin: 0 auto;
-    padding: 78px 0 25px 0;
-    background-image: url("../img/index/icon-plus.svg");
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: 25px;
+    padding-bottom: 25px;
     max-width: none;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      br {
+        display: block;
+      }
+    }
+  }
+}
+
+.card__link {
+  @media (min-width: $tablet-width) {
+    margin-top: -73px;
+    margin-bottom: 34px;
   }
 }
 
 .card__stats {
   margin: 0;
   margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 33px;
+  }
 }
 
 .card__desc {
@@ -65,19 +76,12 @@
   line-height: 16px;
   color: $grey-900;
 
-  &--show-more {
-    margin: 0;
-    justify-content: center;
-    margin-bottom: 21px;
-
-    @media (min-width: $tablet-width) {
-      margin-bottom: 67px;
-    }
-  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    margin-bottom: 16px;
+    padding-bottom: 9px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid $grey-400;
   }
 
 
@@ -93,9 +97,32 @@
     }
   }
 
+  &--show-more {
+    br {
+      display: none;
+    }
+    margin: 0;
+    justify-content: center;
+    margin-bottom: 21px;
+
+    @media (min-width: $tablet-width) {
+      margin-bottom: 67px;
+      text-align: center;
+      border: none;
+
+      br {
+        display: block;
+      }
+    }
+  }
+
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.card__text-container {
+  margin-bottom: 21px;
 }
 
 .card__button {
@@ -117,5 +144,37 @@
 
   &:active {
     color: $grey-900-transparent;
+  }
+}
+
+.card__bg-image {
+  height: 78px;
+  background-image: url("../img/index/icon-plus.svg");
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: 25px;
+
+  @media (min-width: $tablet-width) {
+    // FIXME попробовала сделать плюсик чисто на css, но он при растяжении начинает "плавать"
+    //   &::before {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $grey-310;
+    //     width: 60px;
+    //     height: 2px;
+    //     top: 50%;
+    //     left: 40%;
+    //   }
+
+    //   &::after {
+    //     content: "";
+    //     position: absolute;
+    //     background-color: $grey-310;
+    //     width: 2px;
+    //     height: 60px;
+    //     top: 31%;
+    //     left: 50%;
+    //   }
+    // }
   }
 }

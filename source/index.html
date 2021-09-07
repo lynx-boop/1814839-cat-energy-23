@@ -32,7 +32,7 @@
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list main-nav__list--index main-nav__list--open menu list-reset">
+      <ul class="main-nav__list main-nav__list--index main-nav__list--close menu list-reset">
         <li class="menu__item active active--index">
           <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
@@ -147,9 +147,14 @@
             </div>
           </div>
           <div class="example__controls">
-            <button class="example__button uppercase">Было</button>
-            <!-- Здесь будет шкала -->
-            <button class="example__button uppercase">Стало</button>
+            <button class="example__button uppercase">
+              <span class="example__button-span">Было</span>
+            </button>
+            <div class="example__bar"></div>
+            <button class="example__button uppercase">
+              <span class="example__button-span">Стало
+              </span>
+            </button>
           </div>
         </div>
       </div>
@@ -184,24 +189,26 @@
 
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link">
+          <a class="social-list__link" href="#">
             <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
           </a>
         </li>
       </ul>
 
       <div class="page-footer__partner partner">
-        <p class="partner__text">HTML Academy</p>
+        <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <p class="partner__text">HTML Academy</p>
+        </a>
         <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
           <img class="partner__img" src="img/logo-html.svg" width="27" height="34" alt="Лого HTML Academy">
         </a>
