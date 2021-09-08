@@ -12,6 +12,12 @@
     background-size: cover;
     background-position-y: center;
   }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/index/background-cat-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   text-align: center;
   padding-bottom: 22px;
 
