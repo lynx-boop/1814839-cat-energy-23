@@ -19,6 +19,20 @@
   }
 }
 
+.example__image--before {
+  width: 311px;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    width: auto;
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 536px;
+  }
+}
+
 .example__controls {
   display: flex;
   justify-content: center;
@@ -61,7 +75,7 @@
       height: 6px;
       border: none;
       background-color: $grey-320;
-      top: 8px;
+      top: 13px;
       left: 0;
     }
 
@@ -76,7 +90,7 @@
       box-shadow:
         0 3px 5px $grey-400,
         0 0 0 1px $grey-400;
-      top: -5px;
+      top: 0;
       left: 45%;
     }
   }
@@ -173,5 +187,7 @@
 }
 
 .example__button-span {
-  border-bottom: 1px dotted $grey-400;
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px dotted $grey-400;
+  }
 }
