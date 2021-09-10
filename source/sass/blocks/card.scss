@@ -47,15 +47,45 @@
 }
 
 .card__link {
-  @media (min-width: $tablet-width) {
-    margin-top: -73px;
-    margin-bottom: 34px;
+  &--img {
+    display: block;
+    justify-self: center;
+    align-self: center;
+    // FIXME по-другому выровнять коробки в мобильной версии никак не получалось, чтобы не задевался еще и текст
+    // поэтому эта часть кода осталась
+    @media (min-width: $tablet-width) {
+      margin-top: -90px;
+      margin-bottom: 28px;
+    }
   }
+}
+
+.card__img {
+  &--min {
+    width: 68px;
+    height: 86px;
+
+    @media (min-width: $tablet-width) {
+      width: 161px;
+      height: 172px;
+    }
+  }
+
+  &--big {
+    width: 84px;
+    height: 101px;
+
+    @media (min-width: $tablet-width) {
+      width: 172px;
+      height: 202px;
+    }
+  }
+
 }
 
 .card__stats {
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 33px;
