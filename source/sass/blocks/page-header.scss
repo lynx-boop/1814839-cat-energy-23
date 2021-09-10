@@ -22,3 +22,26 @@
     opacity: 0.6;
   }
 }
+
+.page-header__img {
+  &--cat {
+    width: 34px;
+    height: 38px;
+
+    @media (min-width: $tablet-width) {
+      width: 174px;
+      height: 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 202px;
+      height: 59px;
+    }
+  }
+
+  &--text {
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
+}
