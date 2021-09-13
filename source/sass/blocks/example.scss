@@ -101,7 +101,17 @@
 }
 
 .example__preview {
+  position: relative;
   justify-self: center;
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    height: 525px;
+  }
+}
+
+.example__before {
+  position: absolute;
 }
 
 .example__inner {
