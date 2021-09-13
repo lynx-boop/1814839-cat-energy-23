@@ -156,16 +156,22 @@
                 <source media="(min-width: 768px)"
                   srcset="img/index/cat-before-tablet 1x.png, img/index/cat-before-tablet@2x 2x.png">
                 <img class="example__image example__image--before" src="img/index/cat-before.png"
-                  alt="Жирненький котик">
+                  srcset="img/index/cat-before@2x.png 2x" alt="Жирненький котик">
               </picture>
             </div>
 
-            <div class="example__after visually-hidden">
+            <div class="example__after">
               <picture>
-                <img class="example__image" src="img/index/cat-after.png" alt="Стройный котик">
+                <source media="(min-width: 1200px)"
+                  srcset="img/index/cat-after-desktop.png 1x, img/index/cat-after-desktop@2x.png 2x">
+                <source media="(min-width: 768px)"
+                  srcset="img/index/cat-after-tablet 1x.png, img/index/cat-after-tablet@2x 2x.png">
+                <img class="example__image example__image--after" src="img/index/cat-after.png"
+                  srcset="img/index/cat-after@2x.png 2x" alt="Стройный котик">
               </picture>
             </div>
           </div>
+
           <div class="example__controls">
             <button class="example__button uppercase">
               <span class="example__button-span">Было</span>

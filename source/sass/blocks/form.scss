@@ -113,9 +113,11 @@
   line-height: 16px;
   font-weight: 400;
   margin: 0;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding-left: 61px;
+    text-align: left;
+    align-self: center;
   }
 }
 
@@ -152,7 +154,12 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
+    gap: 60px;
+    align-items: start;
+  }
+
+  @media (min-width: $desktop-width) {
+    gap: 80px;
   }
 }
 
