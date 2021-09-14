@@ -144,12 +144,8 @@ exports.server = server;
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/js/script.js", gulp.series(scripts));
-  gulp.watch("source/*.html", gulp.series(hmtl, reload));
+  gulp.watch("source/*.html", gulp.series(html, reload));
 }
-
-exports.default = gulp.series(
-  styles, html, server, watcher
-);
 
 // Build
 
