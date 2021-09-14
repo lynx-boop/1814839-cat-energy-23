@@ -12,7 +12,7 @@
 
 .card__title {
   margin: 0;
-  margin-bottom: 18px;
+  margin-bottom: 15px;
   font-family: $custom-font;
   font-size: 16px;
   line-height: 20px;
@@ -30,19 +30,10 @@
   }
 
   &--show-more {
-    br {
-      display: none;
-    }
     margin: 0 auto;
-    padding-bottom: 25px;
+    margin-bottom: 7px;
     max-width: none;
     text-align: center;
-
-    @media (min-width: $tablet-width) {
-      br {
-        display: block;
-      }
-    }
   }
 }
 
@@ -157,6 +148,7 @@
 .card__button {
   grid-column-start: 1;
   grid-column-end: -1;
+  padding-bottom: 9px;
 
   @media (min-width: $tablet-width) {
     align-self: end;
@@ -177,12 +169,13 @@
 }
 
 .card__bg-image {
-  height: 78px;
+  height: 40px;
   background-image: url("../img/catalog/plus.svg");
   background-size: 30px 30px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 25px;
+  background-position-y: 6px;
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/catalog/plus-desktop.svg");

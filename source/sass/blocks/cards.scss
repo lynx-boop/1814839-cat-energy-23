@@ -23,7 +23,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $grey-300;
-  padding: 19px 0 25px 0;
+  padding: 19px 0 24px 0;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;
