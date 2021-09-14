@@ -13,6 +13,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-top: 58px;
     padding-bottom: 75px;
     border-top: 0;
     background-image: linear-gradient(to bottom, $white 30%, $grey-200 30%);
@@ -103,6 +104,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 27px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }
 
 .example__preview {
@@ -113,6 +118,11 @@
 
   @media (min-width: $tablet-width) {
     height: 525px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+    height: 496px;
   }
 }
 
@@ -169,6 +179,10 @@
   @media (min-width: $tablet-width) {
     display: block;
   }
+
+  @media (min-width: $desktop-width) {
+    display: inline-block;
+  }
 }
 
 .example__cost {
@@ -189,12 +203,13 @@
   @media (min-width: $desktop-width) {
     width: auto;
     justify-self: left;
+    margin-top: 0;
   }
 }
 
 .example__span {
   @media (min-width: $desktop-width) {
-    margin-left: 63px;
+    margin-left: 60px;
   }
 }
 

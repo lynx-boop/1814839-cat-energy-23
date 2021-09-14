@@ -48,7 +48,7 @@
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     // repeat почему-то не сработал
-    column-gap: 80px;
+    column-gap: 76px;
   }
 }
 

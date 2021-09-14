@@ -93,6 +93,18 @@
   justify-self: left;
   padding-left: 71px;
 
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      margin-left: 65px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
