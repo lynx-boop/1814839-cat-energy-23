@@ -16,7 +16,7 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -39,8 +39,8 @@
   font-family: $custom-font;
   margin: 0;
   width: 124px;
-  height: 64px;
-  padding-top: 15px;
+  height: 56px;
+  padding-top: 14px;
   border: 1px solid $grey-400;
   border-radius: 5px;
 
@@ -62,7 +62,7 @@
   line-height: 12px;
   justify-self: center;
   margin: 0;
-  top: 55px;
+  top: 47px;
   width: 87px;
   align-self: center;
 

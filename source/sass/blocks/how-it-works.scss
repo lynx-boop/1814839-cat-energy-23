@@ -1,6 +1,6 @@
 .how-it-works {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -61,7 +61,7 @@
   // FIXME почему не применяется это свойство выше?
 
   &:not(:first-child) {
-    margin-top: 24px;
+    margin-top: 20px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -84,7 +84,7 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     background-color: $green-600;
     background-repeat: no-repeat;
