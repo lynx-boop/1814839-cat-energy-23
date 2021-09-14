@@ -76,7 +76,6 @@
         <h2 class="programs__title uppercase">Похудение</h2>
         <p class="programs__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-        <!-- Делаем изображение в ::before background-image -->
         <a class="programs__catalog uppercase">
           Каталог slim
           <svg class="programs__arrow" width="24" height="12" viewbox="0 0 24 12" fill="none"
@@ -113,8 +112,10 @@
             кипятком и готово.</li>
           <li class="how-it-works__item how-it-works__item--cutlery">Замените один-два приема обычной еды на наше
             функциональное питание.</li>
-          <li class="how-it-works__item how-it-works__item--scales">Уже через месяц наслаждайтесь изменениями к лучшему
-            вашего питомца!</li>
+          <li class="how-it-works__item how-it-works__item--scales">Уже через месяц наслаждайтесь изменениями к
+            лучшему
+            <span class="how-it-works__span">вашего питомца!</span>
+          </li>
         </ul>
       </div>
     </section>
@@ -196,7 +197,9 @@
         <div class="location__inner">
           <h2 class="location__cooperation uppercase">Приглашаем<br>
             к сотрудничеству дилеров!</h2>
-          <p class="location__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="location__address">ул. Большая Конюшенная, д. 19/8
+            <span class="location__span">Санкт-Петербург</span>
+          </p>
         </div>
       </div>
 
@@ -217,17 +220,26 @@
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-vk-tablet.svg">
+              <img class="social-list__img social-list__img--vk" src="img/icon-vk.svg" alt="Иконка Вконтакте">
+            </picture>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-inst-tablet.svg">
+              <img class="social-list__img social-list__img--inst" src="img/icon-inst.svg" alt="Иконка Инстаграм">
+            </picture>
           </a>
         </li>
         <li class="social-list__item">
           <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-fb-tablet.svg">
+              <img class="social-list__img social-list__img--fb" src="img/icon-fb.svg" alt="Иконка Фэйсбук">
+            </picture>
           </a>
         </li>
       </ul>

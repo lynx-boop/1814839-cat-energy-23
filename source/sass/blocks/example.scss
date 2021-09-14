@@ -6,8 +6,8 @@
   padding-bottom: 35px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 56px;
-    padding-bottom: 64px;
+    padding-top: 42px;
+    padding-bottom: 68px;
     background-image: linear-gradient(to bottom, $white 65%, $grey-200 65%);
     border-top: 1px solid $grey-210;
   }
@@ -69,7 +69,7 @@
 
   @media (min-width: $tablet-width) {
     width: 428px;
-    margin: 0 20px;
+    margin: 0 16px;
 
     &::before {
       width: 428px;
@@ -83,22 +83,26 @@
     &::after {
       content: "";
       position: absolute;
-      width: 34px;
-      height: 34px;
-      border: 13px solid $white;
+      width: 31px;
+      height: 31px;
+      border: 12px solid $white;
       border-radius: 50%;
       background-color: $green-600;
       box-shadow:
         0 3px 5px $grey-400,
         0 0 0 1px $grey-400;
       top: 0;
-      left: 45%;
+      left: 47%;
     }
   }
 }
 
 .example__slider {
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 27px;
+  }
 }
 
 .example__preview {
@@ -173,6 +177,7 @@
     font-size: 20px;
     line-height: 29px;
     text-align: right;
+    margin-top: 7px;
   }
 
   @media (min-width: $desktop-width) {
