@@ -165,6 +165,12 @@
   }
 }
 
+.example__span {
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
 .example__cost {
   font-family: $custom-font;
   font-size: 14px;
