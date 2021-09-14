@@ -36,6 +36,7 @@
     font-size: 20px;
     line-height: 30px;
     font-weight: 400;
+    margin-top: -3px;
   }
 
   &--index {
@@ -53,52 +54,19 @@
   cursor: pointer;
   border: none;
   background-color: transparent;
-  width: 24px;
-  height: 18px;
-  position: relative;
-  top: 4px;
+  background-repeat: no-repeat;
+  margin-top: 12px; // здесь через марджин, потому что по-другому никак вертикально не выставлялось
 
-  &::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 18px;
-    height: 18px;
+  &--open {
+    background-image: url("../img/menu-open-icon.svg");
+    width: 20px;
+    height: 20px;
   }
 
   &--close {
-    margin-top: 8px;
-    border-top: 2px solid $black;
-    border-bottom: 2px solid $black;
-
-    &::before {
-      width: 24px;
-      height: 2px;
-      background-color: $black;
-      left: 0;
-      top: 45%;
-    }
-  }
-
-  &--open {
-    &::before,
-    &::after {
-      content: "";
-      position: absolute;
-      top: 8px;
-      left: 0;
-      width: 24px;
-      height: 2px;
-      background-color: $black;
-    }
-
-    &::before {
-      transform: rotate(45deg);
-    }
-
-    &::after {
-      transform: rotate(-45deg);
-    }
+    background-image: url("../img/menu-close-icon.svg");
+    width: 24px;
+    height: 18px;
   }
 
   @media (min-width: $tablet-width) {

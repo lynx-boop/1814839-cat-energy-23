@@ -1,16 +1,18 @@
 .promo {
+  position: relative;
   text-align: center;
   padding-bottom: 22px;
+  padding-top: 27px;
 
   &::before {
     content: "";
     position: absolute;
-    top: 85px;
+    top: 0;
     z-index: -1;
     display: block;
     width: 100%;
     padding-bottom: 302px;
-    background-image: url("../img/index/background-cat-mobile.jpg");
+    background-image: url("../img/index/background-cat-mobile.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
@@ -22,6 +24,7 @@
 
   @media (min-width: $tablet-width) {
     padding-bottom: 526px;
+    padding-top: 46px;
     text-align: left;
 
     &::before {
@@ -32,19 +35,19 @@
   @media (min-width: $desktop-width) {
     margin-bottom: 82px;
     text-align: left;
-    padding-top: 32px;
+    padding-top: 80px;
     padding-bottom: 185px;
 
     &::before {
       content: "";
       position: absolute;
-      top: 0;
+      top: -144px;
       right: 0;
       z-index: -1;
       display: block;
       width: 50%;
       height: 694px;
-      background-image: url("../img/index/background-cat-desktop.jpg");
+      background-image: url("../img/index/background-cat-desktop.jpeg");
       background-repeat: no-repeat;
       background-size: cover;
 
