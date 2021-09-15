@@ -1,25 +1,44 @@
+.main-nav {
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
 .main-nav__list {
   position: relative;
   z-index: 1;
+  font-size: 20px;
+  line-height: 20px;
+
+  &--no-js {
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      text-align: center;
+      background-color: $white;
+      width: 100%;
+      margin-top: 13px -10px 0;
+    }
+  }
 
   &--close {
-    display: none;
+    @media (max-width: $mobile-width-only) {
+      display: none;
+    }
   }
 
   &--open {
-    display: block;
-    text-align: center;
-    background-color: $white;
-    font-size: 20px;
-    line-height: 20px;
-    width: 100%;
-    position: absolute;
-    top: 80px;
-    left: 0;
+    @media (max-width: $mobile-width-only) {
+      display: block;
+      text-align: center;
+      background-color: $white;
+      width: 100%;
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
   }
 
   @media (min-width: $tablet-width) {
-    position: relative;
     top: 18px;
     display: flex;
     justify-content: right;
@@ -57,14 +76,18 @@
   background-repeat: no-repeat;
   margin-top: 12px; // здесь через марджин, потому что по-другому никак вертикально не выставлялось
 
+  &--no-js {
+    display: none;
+  }
+
   &--open {
-    background-image: url("../img/menu-open-icon.svg");
+    background-image: url("../img/menu-open.svg");
     width: 20px;
     height: 20px;
   }
 
   &--close {
-    background-image: url("../img/menu-close-icon.svg");
+    background-image: url("../img/menu-close.svg");
     width: 24px;
     height: 18px;
   }

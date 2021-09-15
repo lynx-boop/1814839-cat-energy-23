@@ -1,11 +1,16 @@
 .page-header {
   display: flex;
   align-content: center;
-  justify-content: space-between;
   padding: 10px 20px 14px;
-  width: 100%;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
 
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
     padding: 25px 30px 14px 29px;
   }
 
@@ -46,7 +51,7 @@
   &--text {
     display: block;
     margin-top: 5px;
-    margin-left: -5px;
+    margin-left: 56px;
 
     @media (min-width: $tablet-width) {
       display: none;
