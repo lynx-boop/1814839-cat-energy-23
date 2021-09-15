@@ -1,5 +1,10 @@
+.page__body {
+  overflow-x: hidden;
+}
+
 .page-main {
-  padding-top: 27px;
+  width: 100%;
+  overflow: hidden;
 }
 
 .page-main__main-title {

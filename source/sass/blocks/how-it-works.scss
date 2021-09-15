@@ -1,6 +1,6 @@
 .how-it-works {
   padding-top: 27px;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -41,14 +41,14 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 90px 137px;
+    gap: 90px 60px;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     // repeat почему-то не сработал
-    column-gap: 80px;
+    column-gap: 76px;
   }
 }
 
@@ -58,10 +58,9 @@
   padding-left: 80px;
   height: 60px;
   vertical-align: center;
-  // FIXME почему не применяется это свойство выше?
 
   &:not(:first-child) {
-    margin-top: 24px;
+    margin-top: 20px;
 
     @media (min-width: $tablet-width) {
       margin: 0;
@@ -84,13 +83,14 @@
     width: 60px;
     height: 60px;
     position: absolute;
-    top: 0;
+    top: -2px;
     left: 0;
     background-color: $green-600;
     background-repeat: no-repeat;
     background-position: center;
 
     @media (min-width: $tablet-width) {
+      top: 0;
       width: 80px;
       height: 80px;
     }
@@ -104,7 +104,12 @@
     position: absolute;
     height: 227px;
     top: 90px;
-    right: 0;
+  }
+}
+
+.how-it-works__span {
+  @media (min-width: $tablet-width) {
+    display: block;
   }
 }
 
@@ -113,11 +118,10 @@
     background-image: url("../img/index/icon-leaf.svg");
   }
 
-  // FIXME почему-то свойства для афтера работают странно - область, в которой находится афтер
-  // не совпадает с областью, в которой находится цифра(( Почему так?
   @media (min-width: $tablet-width) {
     &::after {
       content: "1";
+      right: 20px;
     }
   }
 }
@@ -130,6 +134,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       content: "2";
+      right: 4px;
     }
   }
 }
@@ -142,6 +147,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       content: "3";
+      right: 2px;
     }
   }
 }
@@ -154,6 +160,7 @@
   @media (min-width: $tablet-width) {
     &::after {
       content: "4";
+      right: 1px;
     }
   }
 }

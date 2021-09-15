@@ -17,7 +17,7 @@
 .programs__item {
   position: relative;
   background-color: $grey-100;
-  padding: 20px;
+  padding: 30px 20px 19px;
   padding-top: 30px;
 
   &::before {
@@ -43,14 +43,14 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 77px 52px 57px;
+    padding: 77px 52px 61px;
 
     &--slim::before {
       background-size: cover;
       width: 200px;
-      height: 200px;
+      height: 212px;
       left: auto;
-      top: 92px;
+      top: 80px;
       right: 62px;
     }
 
@@ -91,7 +91,19 @@
   margin: 0;
   margin-bottom: 30px;
   justify-self: left;
-  padding-left: 70px;
+  padding-left: 71px;
+
+  &--slim {
+    @media (min-width: $desktop-width) {
+      margin-left: 20px;
+    }
+  }
+
+  &--pro {
+    @media (min-width: $desktop-width) {
+      margin-left: 65px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 36px;
@@ -109,10 +121,14 @@
 
 .programs__text {
   font-family: $default-font;
-  padding-bottom: 23px;
+  padding-bottom: 21px;
   border-bottom: 1px solid $grey-300;
   margin: 0;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
+
+  @media (max-width: 320px) {
+    max-width: 227px;
+  }
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -121,7 +137,7 @@
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 48px;
-    padding-right: 316px;
+    padding-right: 260px;
   }
 
   @media (min-width: $desktop-width) {
@@ -134,6 +150,7 @@
   position: relative;
   font-size: 16px;
   line-height: 16px;
+  left: -1px;
 
   &:active {
     color: $black-transparent;
@@ -149,13 +166,13 @@
 
 .programs__arrow {
   position: absolute;
-  top: 8px;
-  left: 99px;
-  width: 26px;
-  height: 10px;
+  top: 5px;
+  left: 93px;
+  width: 40px;
+  height: 12px;
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    left: 130px;
+    left: 125px;
   }
 }

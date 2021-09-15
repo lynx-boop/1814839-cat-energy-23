@@ -3,3 +3,21 @@
   font-size: 16px;
   line-height: 18px;
 }
+
+.partner__img {
+  margin-top: 5px;
+}
+
+.partner__link,
+.partner__link svg {
+  color: $grey-800;
+
+  &:hover,
+  &:focus {
+    color: $green-600;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}

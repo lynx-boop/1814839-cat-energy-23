@@ -16,11 +16,15 @@
 .stats__item {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 27px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     display: flex;
     column-gap: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 55px;
   }
 }
 
@@ -39,14 +43,14 @@
   font-family: $custom-font;
   margin: 0;
   width: 124px;
-  height: 64px;
-  padding-top: 15px;
+  height: 56px;
+  padding-top: 14px;
   border: 1px solid $grey-400;
   border-radius: 5px;
 
   @media (min-width: $tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 72px;
     font-size: 30px;
     line-height: 37px;
   }
@@ -62,20 +66,25 @@
   line-height: 12px;
   justify-self: center;
   margin: 0;
-  top: 55px;
+  top: 47px;
   width: 87px;
   align-self: center;
 
+  br {
+    display: block;
+  }
+
   @media (min-width: $tablet-width) {
-    br {
-      display: none;
-    }
     font-size: 14px;
     line-height: 14px;
-    top: 68px;
+    top: 63px;
     width: max-content;
     background-color: $white;
     padding: 0 10px;
+
+    br {
+      display: none;
+    }
   }
 
   @media (min-width: $desktop-width) {
