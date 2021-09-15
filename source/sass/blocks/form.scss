@@ -80,7 +80,6 @@
 
 .form__title {
   position: relative;
-  width: max-content;
   background-color: $white;
   padding-right: 20px;
   font-size: 24px;
@@ -90,6 +89,9 @@
   margin-bottom: 35px;
 
   @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 76px;
@@ -107,6 +109,14 @@
 
       @media (min-width: $desktop-width) {
         padding-left: 40px;
+      }
+
+      span {
+        display: block;
+
+        @media (min-width: $tablet-width) {
+          display: inline;
+        }
       }
     }
 

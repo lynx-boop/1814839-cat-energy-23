@@ -29,9 +29,10 @@
         display: block;
         width: 50%;
         height: 694px;
-        background-image: url("../img/index/background-cat-desktop.jpeg");
+        background-image: url("../img/index/background-cat-desktop.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        background-color: $green-700;
 
         @media (min-resolution: 2dppx) {
           background-image: url("../img/index/background-cat-desktop@2x.jpeg");
