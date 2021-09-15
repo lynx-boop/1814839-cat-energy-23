@@ -1,6 +1,12 @@
-.page-main {
-  overflow: hidden;
+.page__body {
+  overflow-x: hidden;
 }
+
+// .page-main {
+//   &--index {
+//     overflow: hidden;
+//   }
+// }
 
 .page-main__main-title {
   margin: 0;
