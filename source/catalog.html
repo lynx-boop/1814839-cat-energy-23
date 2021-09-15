@@ -31,11 +31,11 @@
 
     <nav class="main-nav">
 
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list main-nav__list--close menu list-reset">
+      <ul class="main-nav__list main-nav__list--close main-nav__list--no-js menu list-reset">
         <li class="menu__item">
           <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
@@ -294,7 +294,9 @@
     </section>
 
     <section class="page-main__additional additional">
-      <h2 class="additional__title">Дополнительные товары</h2>
+      <h2 class="additional__title">
+        <span>Дополнительные товары</span>
+      </h2>
 
       <div class="additional__inner">
         <ul class="additional__list list-reset">
@@ -400,18 +402,24 @@
 
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <svg width="23" height="16">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
+          <a class="social-list__link social-list__link--inst" href="#">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-inst"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
+          <a class="social-list__link social-list__link--fb" href="#">
+            <svg width="22" height="22">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -421,13 +429,15 @@
           <p class="partner__text">HTML Academy</p>
         </a>
         <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="partner__img" src="img/logo-html.svg" width="27" height="34" alt="Лого HTML Academy">
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-html"></use>
+          </svg>
         </a>
       </div>
     </section>
   </footer>
 
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
 
 </body>
 

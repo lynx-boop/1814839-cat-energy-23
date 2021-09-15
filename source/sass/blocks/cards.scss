@@ -6,8 +6,10 @@
 
 .cards__list {
   display: grid;
+  margin: 0 -20px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     grid-template-columns: 1fr 1fr;
     gap: 141px 60px;
   }
@@ -23,7 +25,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   border-top: 1px solid $grey-300;
-  padding: 19px 0 24px 0;
+  padding: 19px 20px 24px;
 
   @media (min-width: $tablet-width) {
     grid-template-columns: 1fr;

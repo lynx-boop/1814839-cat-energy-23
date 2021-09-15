@@ -9,8 +9,8 @@
   <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="../favicon.ico">
-  <link rel="icon" href="img/favicons/favicon32.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/favicon180.png">
+  <link rel="icon" href="../img/favicons/favicon32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="../img/favicons/favicon180.png">
   <link rel="manifest" href="manifest.webmanifest">
 </head>
 
@@ -31,11 +31,11 @@
 
     <nav class="main-nav">
 
-      <button class="main-nav__toggle main-nav__toggle--close" type="button">
+      <button class="main-nav__toggle main-nav__toggle--close main-nav__toggle--no-js" type="button">
         <span class="visually-hidden">Открыть/закрыть меню</span>
       </button>
 
-      <ul class="main-nav__list main-nav__list--close menu list-reset">
+      <ul class="main-nav__list main-nav__list--close main-nav__list--no-js menu list-reset">
         <li class="menu__item">
           <a href="index.html" class="menu__link uppercase">Главная</a>
         </li>
@@ -115,8 +115,10 @@
       </div>
 
       <fieldset class="form__group form__group--contacts">
-        <legend class="form__title">Контактные данные<br>
-          (владельца кота)</legend>
+        <legend class="form__title form__title--line">
+          <span>Контактные данные<br>
+            (владельца кота)</span>
+        </legend>
 
         <div class="form__container">
           <p class="form__field text-field">
@@ -165,7 +167,9 @@
       </fieldset>
 
       <fieldset class="form__group form__group--comment" action="https://echo.htmlacademy.ru" method="post">
-        <legend class="form__title">Комментарий</legend>
+        <legend class="form__title form__title--line">
+          <span>Комментарий</span>
+        </legend>
         <label class="form__label">
           <textarea class="form__textarea uppercase" name="comment" id="comment"
             placeholder="Расскажите обо всех повадках кота"></textarea>
@@ -173,7 +177,9 @@
       </fieldset>
 
       <fieldset class="form__group form__group--add-options">
-        <legend class="form__title">Дополнительно</legend>
+        <legend class="form__title form__title--line">
+          <span>Дополнительно</span>
+        </legend>
         <ul class="form__list form__list--add-options list-reset">
 
           <li class="form__item checkbox">
@@ -245,18 +251,24 @@
 
       <ul class="page-footer__social-list social-list list-reset">
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-vk.svg" width="23" height="16" alt="Иконка Вконтакте">
+          <a class="social-list__link social-list__link--vk" href="#">
+            <svg width="23" height="16">
+              <use xlink:href="img/sprite.svg#icon-vk"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-inst.svg" width="16" height="16" alt="Иконка Инстаграм">
+          <a class="social-list__link social-list__link--inst" href="#">
+            <svg width="16" height="16">
+              <use xlink:href="img/sprite.svg#icon-inst"></use>
+            </svg>
           </a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="#">
-            <img class="social-list__img" src="img/icon-fb.svg" width="22" height="22" alt="Иконка Фэйсбук">
+          <a class="social-list__link social-list__link--fb" href="#">
+            <svg width="22" height="22">
+              <use xlink:href="img/sprite.svg#icon-fb"></use>
+            </svg>
           </a>
         </li>
       </ul>
@@ -266,13 +278,15 @@
           <p class="partner__text">HTML Academy</p>
         </a>
         <a class="partner__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <img class="partner__img" src="img/icons/icon-html.svg" width="27" height="34" alt="Лого HTML Academy">
+          <svg width="27" height="34">
+            <use xlink:href="img/sprite.svg#icon-html"></use>
+          </svg>
         </a>
       </div>
     </section>
   </footer>
 
-  <!-- <script src="js/script.js"></script> -->
+  <script src="js/script.min.js"></script>
 
 </body>
 

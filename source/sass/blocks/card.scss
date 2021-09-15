@@ -182,28 +182,4 @@
     height: 140px;
     background-size: 60px 60px;
   }
-
-  // @media (min-width: $tablet-width) {
-  //   FIXME попробовала сделать плюсик чисто на css, но он при растяжении начинает "плавать"
-  //     &::before {
-  //       content: "";
-  //       position: absolute;
-  //       background-color: $grey-310;
-  //       width: 60px;
-  //       height: 2px;
-  //       top: 50%;
-  //       left: 40%;
-  //     }
-
-  //     &::after {
-  //       content: "";
-  //       position: absolute;
-  //       background-color: $grey-310;
-  //       width: 2px;
-  //       height: 60px;
-  //       top: 31%;
-  //       left: 50%;
-  //     }
-  //   }
-  // }
 }
