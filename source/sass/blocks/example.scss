@@ -20,28 +20,13 @@
   }
 }
 
-.example__image--before,
-.example__image--after {
-  width: 311px;
-  height: 232px;
-
-  @media (min-width: $tablet-width) {
-    width: auto;
-    height: 620px;
-  }
-
-  @media (min-width: $desktop-width) {
-    height: 536px;
-  }
-}
-
-.example__image--after {
-  display: none;
-}
-
 .example__controls {
   display: flex;
   justify-content: center;
+
+  @media (min-width: $desktop-width) {
+    justify-content: right;
+  }
 }
 
 .example__bar {
@@ -100,6 +85,10 @@
       left: 47%;
     }
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 25px;
+  }
 }
 
 .example__slider {
@@ -118,21 +107,78 @@
   position: relative;
   justify-self: center;
   height: 232px;
+  width: 311px;
   margin-bottom: 31px;
 
   @media (min-width: $tablet-width) {
+    width: 800px;
     height: 525px;
   }
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    height: 496px;
+    height: 600px;
   }
 }
 
-.example__before,
-.example__after {
+.example__before {
   position: absolute;
+  top: -9px;
+  left: -19px;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -60px;
+    left: 135px;
+  }
+}
+
+.example__image--before {
+  width: 311px;
+  height: 240px;
+
+  @media (min-width: $tablet-width) {
+    clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+    width: 670px;
+    height: 520px;
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(0 0, 55% 0, 55% 100%, 0% 100%);
+    height: 520px;
+  }
+}
+
+.example__after {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 108px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: -60px;
+    left: 225px;
+  }
+}
+
+.example__image--after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    height: 520px;
+    clip-path: polygon(45% 0, 100% 0, 100% 100%, 45% 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 50% 100%);
+  }
 }
 
 .example__inner {
