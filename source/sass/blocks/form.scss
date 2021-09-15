@@ -11,6 +11,8 @@
 }
 
 .form__container {
+  position: relative;
+
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -97,6 +99,7 @@
     span {
       padding-right: 10px;
       background-color: $white;
+      display: inline-block;
 
       @media (min-width: $tablet-width) {
         padding: 0 36px;
@@ -111,19 +114,20 @@
       content: "";
       position: absolute;
       z-index: -1;
-      left: 0;
-      top: 15px;
-      width: calc(100% + 180px);
       height: 2px;
       background-color: $green-600;
 
+      @media (max-width: $mobile-width-only) {
+        left: 0;
+        top: 15px;
+        width: calc(100% + 180px);
+      }
+
       @media (min-width: $tablet-width) {
         top: 20px;
-        left: 50%;
-        right: 50%;
+        left: 0;
         width: 100vw;
-        margin-left: -50vw;
-        margin-right: -50vw;
+        margin-left: -30px;
       }
 
       @media (min-width: $desktop-width) {
