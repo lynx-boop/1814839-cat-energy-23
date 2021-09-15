@@ -17,6 +17,24 @@
   @media (min-width: $desktop-width) {
     padding-top: 53px;
     padding-bottom: 29px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+      display: block;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/index/background-cat-desktop.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index/background-cat-desktop@2x.jpeg");
+      }
+    }
   }
 }
 
