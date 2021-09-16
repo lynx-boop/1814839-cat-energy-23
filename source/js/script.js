@@ -1,8 +1,10 @@
 const toggle = document.querySelector('.main-nav__toggle');
 const menu = document.querySelector('.main-nav__list');
+const main = document.querySelector('.page-main');
 
 toggle.classList.remove('main-nav__toggle--no-js');
 menu.classList.remove('main-nav__list--no-js');
+main.classList.remove('open');
 
 toggle.onclick = function () {
   if (toggle.classList.contains('main-nav__toggle--close')) {
