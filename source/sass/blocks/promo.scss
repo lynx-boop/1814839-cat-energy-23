@@ -16,6 +16,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    background-color: $green-700;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/index/background-cat-mobile@2x.jpeg");
@@ -29,6 +30,7 @@
 
     &::before {
       background-image: none;
+      background-color: transparent;
     }
   }
 
@@ -136,3 +138,4 @@
 .promo__wrapper {
   position: relative;
 }
+
