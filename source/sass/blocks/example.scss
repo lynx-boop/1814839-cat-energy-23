@@ -72,17 +72,7 @@
 
     &::after {
       content: "";
-      position: absolute;
-      width: 31px;
-      height: 31px;
-      border: 12px solid $white;
-      border-radius: 50%;
-      background-color: $green-600;
-      box-shadow:
-        0 3px 5px $grey-400,
-        0 0 0 1px $grey-400;
-      top: 0;
-      left: 47%;
+      background-color: transparent;
     }
   }
 
@@ -280,5 +270,41 @@
 .example__button-span {
   @media (min-width: $tablet-width) {
     border-bottom: 1px dotted $grey-400;
+
+    &:hover {
+      border-bottom: 1px solid $grey-400;
+    }
+
+    &:active {
+      border-bottom: none;
+    }
+  }
+}
+
+.example__toggle {
+  z-index: 2; //FIXME как сделать так, чтобы кнопка была сверху?
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $tablet-width) {
+    border: 12px solid $white;
+    border-radius: 50%;
+    background-color: $green-600;
+    padding: 4px 4px;
+    box-shadow:
+      0 0 0 1px $grey-400,
+      0 2px 5px $grey-400;
+
+    &:hover {
+      box-shadow:
+        0 0 0 1px $grey-400,
+        0 5px 5px $grey-400;
+    }
+
+    &:active {
+      box-shadow:
+        0 0 0 1px $green-600,
+        0 5px 5px $grey-400;
+    }
   }
 }

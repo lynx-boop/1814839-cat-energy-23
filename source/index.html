@@ -20,14 +20,14 @@
 <body class="page__body">
 
   <header class="page-header page-header--index wrapper">
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
         <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="page-header__img page-header__img--cat" src="img/logo-cat.svg" alt="Кот-логотип Кэт Энерджи">
       </picture>
     </a>
-    <a class="page-header__logo">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__img page-header__img--text" src="img/logo-text.svg" width="101" height="18"
         alt="Текст-логотип Кэт Энерджи">
     </a>
@@ -180,7 +180,11 @@
             <button class="example__button uppercase">
               <span class="example__button-span">Было</span>
             </button>
-            <div class="example__bar"></div>
+            <div class="example__bar">
+              <button class="example__toggle">
+                <span class="visually-hidden">Toggle</span>
+              </button>
+            </div>
             <button class="example__button uppercase">
               <span class="example__button-span">Стало
               </span>
