@@ -17,6 +17,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: center;
+    background-color: $green-700;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/catalog/background-gift@2x.png");
@@ -36,15 +37,16 @@
       background-image: url("../img/catalog/background-gift-tablet.jpg");
       background-size: 100% auto;
       background-repeat: no-repeat;
+      height: 200px;
+      top: 0;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/background-gift-tablet@2x.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+      }
     }
   }
-
-  @media (min-width: $tablet-width) and (min-resolution: 2dppx) {
-    background-image: url("../img/catalog/background-gift-tablet@2x.png");
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-  }
-
 
   @media (min-width: $desktop-width) {
     height: 289px;
@@ -53,11 +55,12 @@
 
     &::before {
       background-image: url("../img/catalog/background-gift-desktop.jpg");
-    }
-  }
+      height: 289px;
 
-  @media (min-width: $desktop-width) and (min-resolution: 2dppx) {
-    background-image: url("../img/catalog/background-gift-desktop@2x.png");
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/catalog/background-gift-desktop@2x.png");
+      }
+    }
   }
 }
 
