@@ -107,7 +107,6 @@ const copy = (done) => {
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
     "source/img/**/*.svg",
-    // "manifest.webmanifest", - FIXME все ломает, что делать?
     "!source/img/icons/*.svg",
   ], {
     base: "source"
