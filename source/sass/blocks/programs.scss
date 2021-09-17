@@ -147,6 +147,8 @@
 }
 
 .programs__catalog {
+  display: inline-flex;
+  padding-right: 55px;
   position: relative;
   font-size: 16px;
   line-height: 16px;
@@ -166,13 +168,18 @@
 
 .programs__arrow {
   position: absolute;
-  top: 5px;
-  left: 93px;
+  top: 2px;
+  right: 5px;
   width: 40px;
   height: 12px;
 
   @media (min-width: $tablet-width) {
     top: 10px;
-    left: 125px;
+    right: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    top: 6px;
+    right: -2px;
   }
 }
