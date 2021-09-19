@@ -174,12 +174,12 @@
   height: 12px;
 
   @media (min-width: $tablet-width) {
-    top: 10px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
   }
 
   @media (min-width: $tablet-width) {
-    top: 6px;
     right: -2px;
   }
 }

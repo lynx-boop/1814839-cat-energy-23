@@ -282,6 +282,7 @@
 }
 
 .example__toggle {
+  position: absolute;
   z-index: 2; //FIXME как сделать так, чтобы кнопка была сверху?
   border: none;
   background-color: transparent;
